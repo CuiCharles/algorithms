@@ -116,7 +116,8 @@ namespace charles{
 						y->left = z->left;
 						y->left->parent = y;			
 					}
-				
+					delete z;
+					return true;
 				}
 
 				/**
