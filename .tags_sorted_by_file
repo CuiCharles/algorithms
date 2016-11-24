@@ -1,0 +1,1270 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+AR	Makefile	/^AR=ar$/;"	m
+C11FLAGS	Makefile	/^C11FLAGS= -g -Wall -Wno-unused-function -std=c++11$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -g -Wall -Wno-unused-function$/;"	m
+CPP	Makefile	/^CPP=g++$/;"	m
+DEPS	Makefile	/^DEPS = $/;"	m
+INCLUDEDIR	Makefile	/^INCLUDEDIR = -I.\/include -I.$/;"	m
+LIBS	Makefile	/^LIBS = -lm$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = m_based_demo \\$/;"	m
+RANLIB	Makefile	/^RANLIB=ranlib$/;"	m
+SRCDIR	Makefile	/^SRCDIR = .\/src$/;"	m
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+ALGO_2D_ARRAY_H__	include/2darray.h	14;"	d
+Array2D	include/2darray.h	/^				Array2D(uint32_t nrow, uint32_t ncol) {$/;"	f	class:alg::Array2D
+Array2D	include/2darray.h	/^		class Array2D {$/;"	c	namespace:alg
+NC	include/2darray.h	/^				uint32_t NC;		\/\/ num of columns$/;"	m	class:alg::Array2D
+NR	include/2darray.h	/^				uint32_t NR;		\/\/ num of rows$/;"	m	class:alg::Array2D
+alg	include/2darray.h	/^namespace alg {$/;"	n
+clear	include/2darray.h	/^				void clear(const T & value) {$/;"	f	class:alg::Array2D
+col	include/2darray.h	/^				inline const uint32_t col() const { return NC; }$/;"	f	class:alg::Array2D
+m_data	include/2darray.h	/^				T * m_data;			\/\/ the place where the array resides.$/;"	m	class:alg::Array2D
+operator ()	include/2darray.h	/^				const inline T& operator() (int row, int col) const { return this->m_data[row*NC + col]; }$/;"	f	class:alg::Array2D
+operator ()	include/2darray.h	/^				inline T& operator() (int row, int col) { return this->m_data[row*NC + col]; }$/;"	f	class:alg::Array2D
+operator []	include/2darray.h	/^				inline T* operator[] (int row) { return &(m_data[row * NC]); }$/;"	f	class:alg::Array2D
+operator []	include/2darray.h	/^				inline const T* operator[] (int row) const { return &(m_data[row * NC]); }$/;"	f	class:alg::Array2D
+row	include/2darray.h	/^				inline const uint32_t row() const { return NR; }$/;"	f	class:alg::Array2D
+~Array2D	include/2darray.h	/^				~Array2D() {$/;"	f	class:alg::Array2D
+ALGO_8QUEEN_H__	include/8queen.h	13;"	d
+Queen8	include/8queen.h	/^	class Queen8 {$/;"	c	namespace:alg
+_solve	include/8queen.h	/^			void _solve(int row) {	\/\/ start from 0$/;"	f	class:alg::Queen8
+alg	include/8queen.h	/^namespace alg {$/;"	n
+board	include/8queen.h	/^			char board[8][8];$/;"	m	class:alg::Queen8
+check	include/8queen.h	/^			bool check(int row, int col) {$/;"	f	class:alg::Queen8
+cnt	include/8queen.h	/^			int cnt;$/;"	m	class:alg::Queen8
+print	include/8queen.h	/^			void print() {$/;"	f	class:alg::Queen8
+solve	include/8queen.h	/^			void solve() {$/;"	f	class:alg::Queen8
+CacheNode	include/LRU_cache.h	/^			} CacheNode;$/;"	t	class:alg::LRUCache	typeref:struct:alg::LRUCache::_Node_
+LRUCache	include/LRU_cache.h	/^			LRUCache(int cache_size=10) {$/;"	f	class:alg::LRUCache
+LRUCache	include/LRU_cache.h	/^		class LRUCache {$/;"	c	namespace:alg
+_LRUCACHE_	include/LRU_cache.h	32;"	d
+_Node_	include/LRU_cache.h	/^			typedef struct _Node_{$/;"	s	class:alg::LRUCache
+addFristNode	include/LRU_cache.h	/^			void addFristNode(CacheNode *node){$/;"	f	class:alg::LRUCache
+alg	include/LRU_cache.h	/^namespace alg {$/;"	n
+cache_hash	include/LRU_cache.h	/^			map<K,CacheNode*>cache_hash;$/;"	m	class:alg::LRUCache
+cache_size_	include/LRU_cache.h	/^			int cache_size_;$/;"	m	class:alg::LRUCache
+delEndNode	include/LRU_cache.h	/^			void delEndNode(){$/;"	f	class:alg::LRUCache
+detachNode	include/LRU_cache.h	/^			void detachNode(CacheNode *node){$/;"	f	class:alg::LRUCache
+display	include/LRU_cache.h	/^			void display(){	$/;"	f	class:alg::LRUCache
+getValue	include/LRU_cache.h	/^			V getValue(K key) {$/;"	f	class:alg::LRUCache
+key	include/LRU_cache.h	/^				K key;$/;"	m	struct:alg::LRUCache::_Node_
+next	include/LRU_cache.h	/^				struct _Node_ *next;$/;"	m	struct:alg::LRUCache::_Node_	typeref:struct:alg::LRUCache::_Node_::_Node_
+p_cache_list_head	include/LRU_cache.h	/^			CacheNode *p_cache_list_head;$/;"	m	class:alg::LRUCache
+p_cache_list_near	include/LRU_cache.h	/^			CacheNode *p_cache_list_near;$/;"	m	class:alg::LRUCache
+pre	include/LRU_cache.h	/^				struct _Node_ *pre;$/;"	m	struct:alg::LRUCache::_Node_	typeref:struct:alg::LRUCache::_Node_::_Node_
+putValue	include/LRU_cache.h	/^			bool putValue(K key,V value) {$/;"	f	class:alg::LRUCache
+value	include/LRU_cache.h	/^				V value;$/;"	m	struct:alg::LRUCache::_Node_
+~LRUCache	include/LRU_cache.h	/^			~LRUCache() {$/;"	f	class:alg::LRUCache
+ALGO_ASTAR_H__	include/astar.h	23;"	d
+AStar	include/astar.h	/^			AStar(const Array2D<unsigned char> & grid) :$/;"	f	class:alg::AStar
+AStar	include/astar.h	/^	class AStar {$/;"	c	namespace:alg
+AStarResult	include/astar.h	/^			struct AStarResult {$/;"	s	class:alg::AStar
+WALL	include/astar.h	/^			static const unsigned char WALL = 0xFF;$/;"	m	class:alg::AStar
+alg	include/astar.h	/^namespace alg {$/;"	n
+estimate	include/astar.h	/^			inline float estimate(int x1, int y1, int x2, int y2) const {$/;"	f	class:alg::AStar
+f_score	include/astar.h	/^			Array2D<float> f_score;$/;"	m	class:alg::AStar
+g_score	include/astar.h	/^			Array2D<float> g_score;$/;"	m	class:alg::AStar
+m_closedset	include/astar.h	/^			Array2D<bool> m_closedset;$/;"	m	class:alg::AStar
+m_grid	include/astar.h	/^			const Array2D<unsigned char> & m_grid;	$/;"	m	class:alg::AStar
+m_openset	include/astar.h	/^			Heap<uint32_t> m_openset;$/;"	m	class:alg::AStar
+m_openset_grid	include/astar.h	/^			Array2D<bool> m_openset_grid;$/;"	m	class:alg::AStar
+num_nodes	include/astar.h	/^				int num_nodes;$/;"	m	struct:alg::AStar::AStarResult
+path	include/astar.h	/^				int * path; \/\/ the path format:$/;"	m	struct:alg::AStar::AStarResult
+run	include/astar.h	/^			AStarResult * run(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2) {$/;"	f	class:alg::AStar
+~AStarResult	include/astar.h	/^				~AStarResult() $/;"	f	struct:alg::AStar::AStarResult
+ALGO_AVL_H__	include/avl.h	23;"	d
+AVL	include/avl.h	/^        AVL() : tree(0), numNodes(0) {}$/;"	f	class:alg::AVL
+AVL	include/avl.h	/^class AVL {$/;"	c	namespace:alg
+LL	include/avl.h	/^            Node *LL() {$/;"	f	struct:alg::AVL::Node
+LR	include/avl.h	/^            void LR() {$/;"	f	struct:alg::AVL::Node
+Node	include/avl.h	/^            Node(const T &x) : left(0), right(0), value(x), height(1) {}$/;"	f	struct:alg::AVL::Node
+Node	include/avl.h	/^        struct Node {$/;"	s	class:alg::AVL
+RL	include/avl.h	/^            void RL() {$/;"	f	struct:alg::AVL::Node
+RR	include/avl.h	/^            Node *RR() {$/;"	f	struct:alg::AVL::Node
+alg	include/avl.h	/^namespace alg {$/;"	n
+contains	include/avl.h	/^            bool contains(const T &x) const {$/;"	f	struct:alg::AVL::Node
+contains	include/avl.h	/^        bool contains(const T &x) const {$/;"	f	class:alg::AVL
+erase	include/avl.h	/^            Node *erase(const T &x, bool &found) {$/;"	f	struct:alg::AVL::Node
+erase	include/avl.h	/^        void erase(const T &x) {$/;"	f	class:alg::AVL
+getBF	include/avl.h	/^            static int getBF(const Node *t) {$/;"	f	struct:alg::AVL::Node
+getHeight	include/avl.h	/^            static int getHeight(const Node *t) {$/;"	f	struct:alg::AVL::Node
+height	include/avl.h	/^            unsigned height;$/;"	m	struct:alg::AVL::Node
+height	include/avl.h	/^        unsigned height() const   { return Node::getHeight(tree); }$/;"	f	class:alg::AVL
+insert	include/avl.h	/^            Node *insert(const T &x) {$/;"	f	struct:alg::AVL::Node
+insert	include/avl.h	/^        void insert(const T &x) {$/;"	f	class:alg::AVL
+isEmpty	include/avl.h	/^        bool isEmpty() const      { return numNodes == 0; }$/;"	f	class:alg::AVL
+left	include/avl.h	/^            Node *left, *right;$/;"	m	struct:alg::AVL::Node
+numNodes	include/avl.h	/^        unsigned numNodes;$/;"	m	class:alg::AVL
+right	include/avl.h	/^            Node *left, *right;$/;"	m	struct:alg::AVL::Node
+root	include/avl.h	/^        T root () const           { return tree->value; }$/;"	f	class:alg::AVL
+size	include/avl.h	/^        unsigned size() const     { return numNodes; }$/;"	f	class:alg::AVL
+toGraphViz	include/avl.h	/^            void toGraphViz(std::ostream &stream) const {$/;"	f	struct:alg::AVL::Node
+toGraphViz	include/avl.h	/^        void toGraphViz(std::ostream &stream, std::string name) const {$/;"	f	class:alg::AVL
+tree	include/avl.h	/^        Node *tree;$/;"	m	class:alg::AVL
+update	include/avl.h	/^            Node *update() {$/;"	f	struct:alg::AVL::Node
+updateHeight	include/avl.h	/^            void updateHeight() { height = std::max(getHeight(left), getHeight(right)) + 1; }$/;"	f	struct:alg::AVL::Node
+value	include/avl.h	/^            T value;$/;"	m	struct:alg::AVL::Node
+CBase64	include/base64.h	/^	class CBase64 {$/;"	c	namespace:alg
+_CBASE64_H_	include/base64.h	17;"	d
+alg	include/base64.h	/^namespace alg {$/;"	n
+decodeBase64	include/base64.h	/^			static std::string decodeBase64(std::string input) {$/;"	f	class:alg::CBase64
+encodeBase64	include/base64.h	/^			static std::string encodeBase64(unsigned char *input , int input_len) {$/;"	f	class:alg::CBase64
+indexOfCode	include/base64.h	/^			static int indexOfCode(const char c) {$/;"	f	class:alg::CBase64
+ALGO_BELLMAN_FORD_H__	include/bellman_ford.h	48;"	d
+BellmanFord	include/bellman_ford.h	/^			BellmanFord(const Graph & graph):$/;"	f	class:alg::BellmanFord
+BellmanFord	include/bellman_ford.h	/^	class BellmanFord {$/;"	c	namespace:alg
+UNDEFINED	include/bellman_ford.h	60;"	d
+alg	include/bellman_ford.h	/^namespace alg {$/;"	n
+dist	include/bellman_ford.h	/^			HashTable<int32_t, int32_t> dist; 		\/\/ hash table for distance.$/;"	m	class:alg::BellmanFord
+g	include/bellman_ford.h	/^			const Graph & g;	$/;"	m	class:alg::BellmanFord
+has_neg_cycle	include/bellman_ford.h	/^			bool has_neg_cycle;				\/\/ negative weighted cycle mark.$/;"	m	class:alg::BellmanFord
+has_negative_cycle	include/bellman_ford.h	/^			inline bool has_negative_cycle() { return has_neg_cycle; }$/;"	f	class:alg::BellmanFord
+run	include/bellman_ford.h	/^			HashTable<int32_t, int32_t> * run(uint32_t source) {$/;"	f	class:alg::BellmanFord
+ALGO_BINARY_SEARCH_TREE_H__	include/binary_search_tree.h	22;"	d
+BST	include/binary_search_tree.h	/^				BST():m_root(NULL){};$/;"	f	class:alg::BST
+BST	include/binary_search_tree.h	/^		class BST {$/;"	c	namespace:alg
+BSTException	include/binary_search_tree.h	/^				class BSTException: public std::exception {$/;"	c	class:alg::BST
+alg	include/binary_search_tree.h	/^namespace alg {$/;"	n
+deleteKey	include/binary_search_tree.h	/^				bool deleteKey(const KeyT & key) {$/;"	f	class:alg::BST
+destruct_	include/binary_search_tree.h	/^				void destruct_(treeNode *n) {$/;"	f	class:alg::BST
+excp_key	include/binary_search_tree.h	/^				} excp_key;$/;"	m	class:alg::BST	typeref:class:alg::BST::BSTException
+find	include/binary_search_tree.h	/^				treeNode * find(const KeyT & key) {$/;"	f	class:alg::BST
+insert	include/binary_search_tree.h	/^				void insert(const KeyT & key, const ValueT & value) {$/;"	f	class:alg::BST
+key	include/binary_search_tree.h	/^					KeyT 	key;			\/\/ key$/;"	m	struct:alg::BST::treeNode
+left	include/binary_search_tree.h	/^					treeNode *left;			\/\/ left child$/;"	m	struct:alg::BST::treeNode
+m_root	include/binary_search_tree.h	/^				treeNode * m_root;		\/\/ the root$/;"	m	class:alg::BST
+minimum	include/binary_search_tree.h	/^				treeNode * minimum(treeNode *x) {$/;"	f	class:alg::BST
+parent	include/binary_search_tree.h	/^					treeNode *parent;		\/\/ parent$/;"	m	struct:alg::BST::treeNode
+print_helper	include/binary_search_tree.h	/^				void print_helper() {$/;"	f	class:alg::BST
+print_tree	include/binary_search_tree.h	/^				void print_tree(treeNode * n, int indent) {$/;"	f	class:alg::BST
+right	include/binary_search_tree.h	/^					treeNode *right;		\/\/ right child$/;"	m	struct:alg::BST::treeNode
+transplant	include/binary_search_tree.h	/^				void transplant(treeNode *u, treeNode *v) {$/;"	f	class:alg::BST
+treeNode	include/binary_search_tree.h	/^				struct treeNode {$/;"	s	class:alg::BST
+value	include/binary_search_tree.h	/^					ValueT 	value;			\/\/ data$/;"	m	struct:alg::BST::treeNode
+what	include/binary_search_tree.h	/^						virtual const char * what() const throw() {$/;"	f	class:alg::BST::BSTException
+~BST	include/binary_search_tree.h	/^				~BST() {$/;"	f	class:alg::BST
+ALGO_BIT_SET_H__	include/bitset.h	15;"	d
+BitSet	include/bitset.h	/^			BitSet(uint32_t num_bits) {$/;"	f	class:alg::BitSet
+BitSet	include/bitset.h	/^	class BitSet {$/;"	c	namespace:alg
+alg	include/bitset.h	/^namespace alg {$/;"	n
+m_bits	include/bitset.h	/^			unsigned char * m_bits; \/\/ the bits$/;"	m	class:alg::BitSet
+m_bytes	include/bitset.h	/^			uint32_t m_bytes; \/\/ size in bytes$/;"	m	class:alg::BitSet
+m_size	include/bitset.h	/^			uint32_t m_size;	\/\/size in bits$/;"	m	class:alg::BitSet
+set	include/bitset.h	/^			inline void set(uint32_t bit) {$/;"	f	class:alg::BitSet
+test	include/bitset.h	/^			inline bool test(uint32_t bit) {$/;"	f	class:alg::BitSet
+unset	include/bitset.h	/^			inline void unset(uint32_t bit) {$/;"	f	class:alg::BitSet
+~BitSet	include/bitset.h	/^			~BitSet() {$/;"	f	class:alg::BitSet
+ALGO_BLOOM_FILTER_H__	include/bloom_filter.h	22;"	d
+BloomFilter	include/bloom_filter.h	/^		BloomFilter(uint32_t m, uint32_t n):m_bitset(m)$/;"	f	class:alg::BloomFilter
+BloomFilter	include/bloom_filter.h	/^	class BloomFilter {$/;"	c	namespace:alg
+alg	include/bloom_filter.h	/^namespace alg$/;"	n
+m_bits	include/bloom_filter.h	/^		uint32_t m_bits;	\/\/ num of bits$/;"	m	class:alg::BloomFilter
+m_bitset	include/bloom_filter.h	/^		BitSet m_bitset;	\/\/ the bit set structure.$/;"	m	class:alg::BloomFilter
+m_hash	include/bloom_filter.h	/^		struct UHash m_hash[K];	\/\/ universal hash parameters$/;"	m	class:alg::BloomFilter	typeref:struct:alg::BloomFilter::UHash
+m_probset	include/bloom_filter.h	/^		uint32_t m_probset;	\/\/ total elements$/;"	m	class:alg::BloomFilter
+set	include/bloom_filter.h	/^		void set(const char * str) $/;"	f	class:alg::BloomFilter
+test	include/bloom_filter.h	/^		bool test(const char * str)$/;"	f	class:alg::BloomFilter
+ALGO_BTREE_H__	include/btree.h	28;"	d
+ALLOCBLK	include/btree.h	/^			void * ALLOCBLK() {$/;"	f	class:alg::BTree
+BLOCKSIZE	include/btree.h	39;"	d
+BTree	include/btree.h	/^			BTree(const char * path) {$/;"	f	class:alg::BTree
+BTree	include/btree.h	/^	class BTree {$/;"	c	namespace:alg
+DeleteKey	include/btree.h	/^			void DeleteKey(int32_t k) {$/;"	f	class:alg::BTree
+Insert	include/btree.h	/^			void Insert(int32_t k) {$/;"	f	class:alg::BTree
+LEAF	include/btree.h	41;"	d
+MARKFREE	include/btree.h	43;"	d
+ONDISK	include/btree.h	42;"	d
+READ	include/btree.h	/^			node READ(node x, int32_t i) {$/;"	f	class:alg::BTree
+ROOT	include/btree.h	/^			node ROOT() {$/;"	f	class:alg::BTree
+Res	include/btree.h	/^			struct Res {$/;"	s	class:alg::BTree
+Search	include/btree.h	/^			Res Search(int32_t x) {$/;"	f	class:alg::BTree
+T	include/btree.h	40;"	d
+WRITE	include/btree.h	/^			void WRITE(node x) {$/;"	f	class:alg::BTree
+alg	include/btree.h	/^namespace alg {$/;"	n
+c	include/btree.h	/^				int32_t c[510];			\/\/ childs pointers (represented as file offsets)$/;"	m	struct:alg::BTree::node_t
+case1	include/btree.h	/^			void case1(node x, int32_t i, int32_t k) {$/;"	f	class:alg::BTree
+case2	include/btree.h	/^			void case2(node x, int32_t i, int32_t k) {$/;"	f	class:alg::BTree
+case3	include/btree.h	/^			void case3(node x, int32_t i, int32_t k) {$/;"	f	class:alg::BTree
+delete_i	include/btree.h	/^			void delete_i(node x, int32_t i)  {$/;"	f	class:alg::BTree
+delete_op	include/btree.h	/^			void delete_op(node x, int32_t k) {$/;"	f	class:alg::BTree
+fd	include/btree.h	/^			int fd;$/;"	m	class:alg::BTree
+flag	include/btree.h	/^				uint16_t flag;			\/\/ flags$/;"	m	struct:alg::BTree::node_t
+idx	include/btree.h	/^				int32_t idx;$/;"	m	struct:alg::BTree::Res
+insert_nonfull	include/btree.h	/^			void insert_nonfull(node x, int32_t k) {$/;"	f	class:alg::BTree
+key	include/btree.h	/^				int32_t key[509];		\/\/ key$/;"	m	struct:alg::BTree::node_t
+n	include/btree.h	/^				uint16_t n;				\/\/ num key$/;"	m	struct:alg::BTree::node_t
+node	include/btree.h	/^			typedef struct node_t *node;$/;"	t	class:alg::BTree	typeref:struct:alg::BTree::node_t
+node_t	include/btree.h	/^			struct node_t {$/;"	s	class:alg::BTree
+offset	include/btree.h	/^				uint32_t offset;		\/\/ lseek offset related to file beginning$/;"	m	struct:alg::BTree::node_t
+offset	include/btree.h	/^				uint32_t offset;$/;"	m	struct:alg::BTree::Res
+padding	include/btree.h	/^				char padding[12];		\/\/ padding to 4096$/;"	m	struct:alg::BTree::node_t
+search	include/btree.h	/^			Res search(node x, int32_t k) {$/;"	f	class:alg::BTree
+split_child	include/btree.h	/^			void split_child(node x, int32_t i) {$/;"	f	class:alg::BTree
+~BTree	include/btree.h	/^			~BTree() {$/;"	f	class:alg::BTree
+BubbleSort	include/bubble_sort.h	/^		static void	BubbleSort(T list[], int start, int end){$/;"	f	namespace:alg
+_BUBBLE_SORT_H_	include/bubble_sort.h	24;"	d
+alg	include/bubble_sort.h	/^namespace alg {$/;"	n
+Add	include/dictionary.h	/^	bool Add(const TKey& key, TValue&& value)$/;"	f	class:alg::Dictionary
+Add	include/dictionary.h	/^	bool Add(const TKey& key, const TValue& value)$/;"	f	class:alg::Dictionary
+AddOrUpdate	include/dictionary.h	/^	void AddOrUpdate(const TKey& key, const TValue& value)$/;"	f	class:alg::Dictionary
+Begin	include/dictionary.h	/^	ConstIterator Begin() const$/;"	f	class:alg::Dictionary
+Begin	include/dictionary.h	/^	Iterator Begin()$/;"	f	class:alg::Dictionary
+CBegin	include/dictionary.h	/^	ConstIterator CBegin() const$/;"	f	class:alg::Dictionary
+CEnd	include/dictionary.h	/^	ConstIterator CEnd() const$/;"	f	class:alg::Dictionary
+Clear	include/dictionary.h	/^	void Clear()$/;"	f	class:alg::Dictionary
+ConstIterator	include/dictionary.h	/^		ConstIterator(const Dictionary* dict)$/;"	f	class:alg::Dictionary::ConstIterator
+ConstIterator	include/dictionary.h	/^	class ConstIterator : public IteratorBase<const Dictionary, const Entry, ConstIterator>$/;"	c	class:alg::Dictionary
+Contains	include/dictionary.h	/^	bool Contains(const std::pair<TKey, TValue>& pair) const$/;"	f	class:alg::Dictionary
+ContainsKey	include/dictionary.h	/^	bool ContainsKey(const TKey& key) const$/;"	f	class:alg::Dictionary
+Current	include/dictionary.h	/^		EntryType* Current;$/;"	m	class:alg::Dictionary::IteratorBase
+Dict	include/dictionary.h	/^		DictType* Dict;$/;"	m	class:alg::Dictionary::IteratorBase
+Dictionary	include/dictionary.h	/^	Dictionary(int32_t capacity = 0)$/;"	f	class:alg::Dictionary
+Dictionary	include/dictionary.h	/^class Dictionary$/;"	c	namespace:alg
+End	include/dictionary.h	/^	ConstIterator End() const$/;"	f	class:alg::Dictionary
+End	include/dictionary.h	/^	Iterator End()$/;"	f	class:alg::Dictionary
+Entry	include/dictionary.h	/^		Entry()$/;"	f	struct:alg::Dictionary::Entry
+Entry	include/dictionary.h	/^	struct Entry : public KeyValuePair$/;"	s	class:alg::Dictionary
+GetNextPrime	include/dictionary.h	/^	static int GetNextPrime(int n)$/;"	f	class:alg::Dictionary
+HashCode	include/dictionary.h	/^		int32_t HashCode;$/;"	m	struct:alg::Dictionary::Entry
+Index	include/dictionary.h	/^		int32_t Index;$/;"	m	class:alg::Dictionary::IteratorBase
+Iterator	include/dictionary.h	/^		Iterator(Dictionary* dict)$/;"	f	class:alg::Dictionary::Iterator
+Iterator	include/dictionary.h	/^	class Iterator : public IteratorBase<Dictionary, Entry, Iterator>$/;"	c	class:alg::Dictionary
+IteratorBase	include/dictionary.h	/^		IteratorBase(DictType* dict)$/;"	f	class:alg::Dictionary::IteratorBase
+IteratorBase	include/dictionary.h	/^	class IteratorBase$/;"	c	class:alg::Dictionary
+Key	include/dictionary.h	/^		TKey Key;$/;"	m	struct:alg::Dictionary::KeyValuePair
+KeyValuePair	include/dictionary.h	/^	struct KeyValuePair$/;"	s	class:alg::Dictionary
+Next	include/dictionary.h	/^		int32_t Next;$/;"	m	struct:alg::Dictionary::Entry
+Remove	include/dictionary.h	/^	bool Remove(const TKey& key)$/;"	f	class:alg::Dictionary
+Reset	include/dictionary.h	/^		void Reset()$/;"	f	struct:alg::Dictionary::Entry
+Size	include/dictionary.h	/^	int32_t Size() const$/;"	f	class:alg::Dictionary
+TryGetValue	include/dictionary.h	/^	bool TryGetValue(const TKey& key, TValue& outValue) const$/;"	f	class:alg::Dictionary
+TryGetValueOrDefault	include/dictionary.h	/^	TValue TryGetValueOrDefault(const TKey& key, const TValue& defaultValue) const$/;"	f	class:alg::Dictionary
+TryGetValuePtr	include/dictionary.h	/^	TValue* TryGetValuePtr(const TKey& key)$/;"	f	class:alg::Dictionary
+TryGetValuePtr	include/dictionary.h	/^	const TValue* TryGetValuePtr(const TKey& key) const$/;"	f	class:alg::Dictionary
+TryGetValueRefOrDefault	include/dictionary.h	/^	const TValue& TryGetValueRefOrDefault(const TKey& key, const TValue& defaultValue) const$/;"	f	class:alg::Dictionary
+Value	include/dictionary.h	/^		TValue Value;$/;"	m	struct:alg::Dictionary::KeyValuePair
+_FindEntry	include/dictionary.h	/^	int32_t _FindEntry(const TKey& key) const$/;"	f	class:alg::Dictionary
+_Init	include/dictionary.h	/^	void _Init(int32_t capacity)$/;"	f	class:alg::Dictionary
+_Insert	include/dictionary.h	/^	bool _Insert(const TKey& key, TValueRef value, bool add)$/;"	f	class:alg::Dictionary
+_Resize	include/dictionary.h	/^	void _Resize()$/;"	f	class:alg::Dictionary
+_Resize	include/dictionary.h	/^	void _Resize(int32_t newSize, bool forceNewHashCodes)$/;"	f	class:alg::Dictionary
+alg	include/dictionary.h	/^namespace alg$/;"	n
+begin	include/dictionary.h	/^	const_iterator begin() const$/;"	f	class:alg::Dictionary
+begin	include/dictionary.h	/^	iterator begin()$/;"	f	class:alg::Dictionary
+cbegin	include/dictionary.h	/^	const_iterator cbegin() const$/;"	f	class:alg::Dictionary
+cend	include/dictionary.h	/^	const_iterator cend() const$/;"	f	class:alg::Dictionary
+const_iterator	include/dictionary.h	/^	typedef ConstIterator const_iterator;$/;"	t	class:alg::Dictionary
+end	include/dictionary.h	/^	const_iterator end() const$/;"	f	class:alg::Dictionary
+end	include/dictionary.h	/^	iterator end()$/;"	f	class:alg::Dictionary
+iterator	include/dictionary.h	/^	typedef Iterator iterator;$/;"	t	class:alg::Dictionary
+m_Buckets	include/dictionary.h	/^	std::vector<int32_t> m_Buckets;$/;"	m	class:alg::Dictionary
+m_Count	include/dictionary.h	/^	int32_t m_Count;$/;"	m	class:alg::Dictionary
+m_Entries	include/dictionary.h	/^	std::vector<Entry> m_Entries;$/;"	m	class:alg::Dictionary
+m_FreeCount	include/dictionary.h	/^	int32_t m_FreeCount;$/;"	m	class:alg::Dictionary
+m_FreeList	include/dictionary.h	/^	int32_t m_FreeList;$/;"	m	class:alg::Dictionary
+operator !=	include/dictionary.h	/^		bool operator != (const TIter& other) const$/;"	f	class:alg::Dictionary::IteratorBase
+operator *	include/dictionary.h	/^		KeyValuePair& operator*() const$/;"	f	class:alg::Dictionary::Iterator
+operator *	include/dictionary.h	/^		const KeyValuePair& operator*() const$/;"	f	class:alg::Dictionary::ConstIterator
+operator ++	include/dictionary.h	/^		TIter operator++(int32_t)$/;"	f	class:alg::Dictionary::IteratorBase
+operator ++	include/dictionary.h	/^		TIter& operator++()$/;"	f	class:alg::Dictionary::IteratorBase
+operator ==	include/dictionary.h	/^		bool operator == (const TIter& other) const$/;"	f	class:alg::Dictionary::IteratorBase
+operator []	include/dictionary.h	/^	TValue& operator[](const TKey& key)$/;"	f	class:alg::Dictionary
+operator []	include/dictionary.h	/^	const TValue& operator[](const TKey& key) const$/;"	f	class:alg::Dictionary
+~Dictionary	include/dictionary.h	/^	~Dictionary()$/;"	f	class:alg::Dictionary
+ALGO_DIJKSTRA_H__	include/dijkstra.h	23;"	d
+Dijkstra	include/dijkstra.h	/^	class Dijkstra {$/;"	c	namespace:alg
+LARGE_NUMBER	include/dijkstra.h	/^			static const int LARGE_NUMBER = 999999;$/;"	m	class:alg::Dijkstra
+UNDEFINED	include/dijkstra.h	/^			static const int UNDEFINED = -1;$/;"	m	class:alg::Dijkstra
+alg	include/dijkstra.h	/^namespace alg {$/;"	n
+run	include/dijkstra.h	/^			static HashTable<int32_t, int32_t> * run(const Graph & g, uint32_t src_id) {$/;"	f	class:alg::Dijkstra
+ALGO_DIRECTED_GRAPH_H__	include/directed_graph.h	18;"	d
+DirectedGraph	include/directed_graph.h	/^	class DirectedGraph:public Graph {$/;"	c	namespace:alg
+add_edge	include/directed_graph.h	/^			bool add_edge(uint32_t x, uint32_t y, int32_t weight) {$/;"	f	class:alg::DirectedGraph
+add_vertex	include/directed_graph.h	/^			bool add_vertex(uint32_t id) {$/;"	f	class:alg::DirectedGraph
+alg	include/directed_graph.h	/^namespace alg {$/;"	n
+delete_edge	include/directed_graph.h	/^			void delete_edge(uint32_t x, uint32_t y) {$/;"	f	class:alg::DirectedGraph
+delete_me	include/directed_graph.h	/^			void delete_me(uint32_t id) {$/;"	f	class:alg::DirectedGraph
+delete_vertex	include/directed_graph.h	/^			void delete_vertex(uint32_t id) {$/;"	f	class:alg::DirectedGraph
+randgraph	include/directed_graph.h	/^			static DirectedGraph * randgraph(int nvertex) {$/;"	f	class:alg::DirectedGraph
+transpose	include/directed_graph.h	/^			DirectedGraph * transpose() {$/;"	f	class:alg::DirectedGraph
+ALGO_DISJOINTSET_H__	include/disjoint-set.h	22;"	d
+FindSet	include/disjoint-set.h	/^		T* FindSet(T *x) {$/;"	f	namespace:alg
+Link	include/disjoint-set.h	/^		void Link(T *x, T *y) {$/;"	f	namespace:alg
+MakeSet	include/disjoint-set.h	/^		void MakeSet(T *s){$/;"	f	namespace:alg
+Set	include/disjoint-set.h	/^		struct Set{$/;"	s	namespace:alg
+Union	include/disjoint-set.h	/^		void Union(T *x, T *y) {$/;"	f	namespace:alg
+alg	include/disjoint-set.h	/^namespace alg {$/;"	n
+parent	include/disjoint-set.h	/^			Set<T>* parent;$/;"	m	struct:alg::Set
+rank	include/disjoint-set.h	/^			int rank;$/;"	m	struct:alg::Set
+ALGO_DOS_TREE_H__	include/dos_tree.h	20;"	d
+DOSNODE	include/dos_tree.h	41;"	d
+DOSNODE_SIZE	include/dos_tree.h	42;"	d
+DosTree	include/dos_tree.h	/^			DosTree() { }$/;"	f	class:alg::DosTree
+DosTree	include/dos_tree.h	/^	class DosTree:public RBTreeAbstract {$/;"	c	namespace:alg
+alg	include/dos_tree.h	/^namespace alg {$/;"	n
+delete_key	include/dos_tree.h	/^			void delete_key(dostree_node n) {$/;"	f	class:alg::DosTree
+destruct	include/dos_tree.h	/^			void destruct(dostree_node n) {$/;"	f	class:alg::DosTree
+dostree_node	include/dos_tree.h	/^			} *dostree_node;$/;"	t	class:alg::DosTree	typeref:struct:alg::DosTree::dostree_node_t
+dostree_node_t	include/dos_tree.h	/^			typedef struct dostree_node_t : public rbtree_node_t {$/;"	s	class:alg::DosTree
+fixup_size	include/dos_tree.h	/^			void fixup_size(rbtree_node n) {	$/;"	f	class:alg::DosTree
+index	include/dos_tree.h	/^			dostree_node index(int index) {$/;"	f	class:alg::DosTree
+insert	include/dos_tree.h	/^			void insert(int key) {$/;"	f	class:alg::DosTree
+key	include/dos_tree.h	/^				int key;	\/\/ the key	$/;"	m	struct:alg::DosTree::dostree_node_t
+lookup_node	include/dos_tree.h	/^			dostree_node lookup_node(rbtree_node n, int i) {$/;"	f	class:alg::DosTree
+new_node	include/dos_tree.h	/^			static inline dostree_node new_node(int key, color rbtree_node_color, rbtree_node left, rbtree_node right) {$/;"	f	class:alg::DosTree
+print	include/dos_tree.h	/^			void print() {$/;"	f	class:alg::DosTree
+print_helper	include/dos_tree.h	/^			void print_helper(rbtree_node n, int indent) {$/;"	f	class:alg::DosTree
+rotate_left_callback	include/dos_tree.h	/^			void rotate_left_callback(rbtree_node n, rbtree_node parent) {$/;"	f	class:alg::DosTree
+rotate_right_callback	include/dos_tree.h	/^			void rotate_right_callback(rbtree_node n, rbtree_node parent) {$/;"	f	class:alg::DosTree
+size	include/dos_tree.h	/^				int size;	\/\/ the size of this subtree$/;"	m	struct:alg::DosTree::dostree_node_t
+~DosTree	include/dos_tree.h	/^			~DosTree() {$/;"	f	class:alg::DosTree
+ALGO_DOUBLE_LINKED_LIST_H__	include/double_linked_list.h	20;"	d
+INIT_LIST_HEAD	include/double_linked_list.h	31;"	d
+LIST_HEAD	include/double_linked_list.h	28;"	d
+LIST_HEAD_INIT	include/double_linked_list.h	26;"	d
+Type	include/double_linked_list.h	/^	typedef T Type;$/;"	t	struct:TypeofHelper
+TypeofHelper	include/double_linked_list.h	/^struct TypeofHelper$/;"	s
+list_add	include/double_linked_list.h	/^list_add(struct list_head *n, struct list_head *head)$/;"	f
+list_add_	include/double_linked_list.h	/^list_add_(struct list_head *n,$/;"	f
+list_add_tail	include/double_linked_list.h	/^list_add_tail(struct list_head *n, struct list_head *head)$/;"	f
+list_del	include/double_linked_list.h	/^list_del(struct list_head *entry)$/;"	f
+list_del_	include/double_linked_list.h	/^list_del_(struct list_head *prev, struct list_head *next)$/;"	f
+list_del_init	include/double_linked_list.h	/^list_del_init(struct list_head *entry)$/;"	f
+list_empty	include/double_linked_list.h	/^list_empty(const struct list_head *head)$/;"	f
+list_entry	include/double_linked_list.h	201;"	d
+list_entry	include/double_linked_list.h	204;"	d
+list_for_each	include/double_linked_list.h	214;"	d
+list_for_each_entry	include/double_linked_list.h	243;"	d
+list_for_each_entry	include/double_linked_list.h	248;"	d
+list_for_each_entry_safe	include/double_linked_list.h	261;"	d
+list_for_each_entry_safe	include/double_linked_list.h	275;"	d
+list_for_each_prev	include/double_linked_list.h	222;"	d
+list_for_each_safe	include/double_linked_list.h	232;"	d
+list_head	include/double_linked_list.h	/^struct list_head {$/;"	s
+list_move	include/double_linked_list.h	/^list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	include/double_linked_list.h	/^list_move_tail(struct list_head *list, struct list_head *head)$/;"	f
+list_splice	include/double_linked_list.h	/^list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_	include/double_linked_list.h	/^list_splice_(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	include/double_linked_list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+next	include/double_linked_list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+prev	include/double_linked_list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+ALGO_EDMONDS_KARP_H__	include/edmonds_karp.h	25;"	d
+EdmondsKarp	include/edmonds_karp.h	/^			EdmondsKarp(const Graph & graph): g(graph),$/;"	f	class:alg::EdmondsKarp
+EdmondsKarp	include/edmonds_karp.h	/^	class EdmondsKarp {$/;"	c	namespace:alg
+alg	include/edmonds_karp.h	/^namespace alg {$/;"	n
+find_path	include/edmonds_karp.h	/^			bool find_path(int32_t _src, int32_t _sink) {$/;"	f	class:alg::EdmondsKarp
+g	include/edmonds_karp.h	/^			const Graph & g;$/;"	m	class:alg::EdmondsKarp
+m_map	include/edmonds_karp.h	/^			HashTable<int32_t, int32_t> m_map;		\/\/ vertex id to ordinary row\/col number mapping$/;"	m	class:alg::EdmondsKarp
+m_pre	include/edmonds_karp.h	/^			HashTable<int32_t, int32_t> m_pre; 				\/\/ pre node of current node $/;"	m	class:alg::EdmondsKarp
+m_residual	include/edmonds_karp.h	/^			Array2D<int32_t> m_residual;	\/\/ residual network , 2d array$/;"	m	class:alg::EdmondsKarp
+m_rmap	include/edmonds_karp.h	/^			HashTable<int32_t, int32_t> m_rmap;	\/\/ reverse mapping of map.$/;"	m	class:alg::EdmondsKarp
+m_visits	include/edmonds_karp.h	/^			bool * m_visits; 			\/\/ mark whether current node is visited$/;"	m	class:alg::EdmondsKarp
+map	include/edmonds_karp.h	/^			inline const HashTable<int32_t, int32_t> & map() const { return m_map;}$/;"	f	class:alg::EdmondsKarp
+residual	include/edmonds_karp.h	/^			inline const Array2D<int> & residual() const { return m_residual;}$/;"	f	class:alg::EdmondsKarp
+rmap	include/edmonds_karp.h	/^			inline const HashTable<int32_t, int32_t> & rmap() const { return m_rmap;}$/;"	f	class:alg::EdmondsKarp
+run	include/edmonds_karp.h	/^			uint32_t run(int32_t src, int32_t sink) {$/;"	f	class:alg::EdmondsKarp
+~EdmondsKarp	include/edmonds_karp.h	/^			~EdmondsKarp() {$/;"	f	class:alg::EdmondsKarp
+ALGO_FENWICK_H__	include/fenwick_tree.h	18;"	d
+Fenwick	include/fenwick_tree.h	/^		Fenwick() {}$/;"	f	class:Fenwick
+Fenwick	include/fenwick_tree.h	/^		Fenwick(int n)$/;"	f	class:Fenwick
+Fenwick	include/fenwick_tree.h	/^class Fenwick$/;"	c
+LSONE	include/fenwick_tree.h	22;"	d
+fen	include/fenwick_tree.h	/^		std::vector<int> fen;$/;"	m	class:Fenwick
+rsq	include/fenwick_tree.h	/^		inline int rsq(int a, int b)$/;"	f	class:Fenwick
+rsq	include/fenwick_tree.h	/^		int rsq(int a)$/;"	f	class:Fenwick
+update	include/fenwick_tree.h	/^		void update(int k, int x)$/;"	f	class:Fenwick
+ALGO_FIB_HEAP_H__	include/fib-heap.h	21;"	d
+CASCADING_CUT	include/fib-heap.h	/^				void CASCADING_CUT(Node y) {$/;"	f	class:alg::FibHeap
+CONSOLIDATE	include/fib-heap.h	/^				void CONSOLIDATE() {$/;"	f	class:alg::FibHeap
+CUT	include/fib-heap.h	/^				void CUT(Node x, Node y) {$/;"	f	class:alg::FibHeap
+D	include/fib-heap.h	/^				int32_t D(int32_t n) {$/;"	f	class:alg::FibHeap
+DecreaseKey	include/fib-heap.h	/^				void DecreaseKey(Node x, key_type k) {$/;"	f	class:alg::FibHeap
+ExtractMin	include/fib-heap.h	/^				Node ExtractMin() {$/;"	f	class:alg::FibHeap
+FibHeap	include/fib-heap.h	/^				FibHeap():n(0),min(NULL){$/;"	f	class:alg::FibHeap
+FibHeap	include/fib-heap.h	/^		class FibHeap {$/;"	c	namespace:alg
+Insert	include/fib-heap.h	/^				void Insert(key_type key, value_type value) {$/;"	f	class:alg::FibHeap
+LINK	include/fib-heap.h	/^				void LINK(Node y, Node x) {$/;"	f	class:alg::FibHeap
+Node	include/fib-heap.h	/^				typedef struct node_t *Node;$/;"	t	class:alg::FibHeap	typeref:struct:alg::FibHeap::node_t
+Union	include/fib-heap.h	/^				static FibHeap* Union(FibHeap *H1, FibHeap *H2) {$/;"	f	class:alg::FibHeap
+alg	include/fib-heap.h	/^namespace alg {$/;"	n
+child_head	include/fib-heap.h	/^					struct list_head child_head;	\/\/ child list head$/;"	m	struct:alg::FibHeap::node_t	typeref:struct:alg::FibHeap::node_t::list_head
+degree	include/fib-heap.h	/^					int32_t degree;$/;"	m	struct:alg::FibHeap::node_t
+key	include/fib-heap.h	/^					key_type key;$/;"	m	struct:alg::FibHeap::node_t
+key_type	include/fib-heap.h	/^				typedef _Key key_type;$/;"	t	class:alg::FibHeap
+m_root	include/fib-heap.h	/^				struct list_head m_root;	\/\/ root list$/;"	m	class:alg::FibHeap	typeref:struct:alg::FibHeap::list_head
+mark	include/fib-heap.h	/^					bool mark;$/;"	m	struct:alg::FibHeap::node_t
+min	include/fib-heap.h	/^				Node min;$/;"	m	class:alg::FibHeap
+n	include/fib-heap.h	/^				int32_t n;	$/;"	m	class:alg::FibHeap
+node	include/fib-heap.h	/^					struct list_head node;	\/\/ sibling list$/;"	m	struct:alg::FibHeap::node_t	typeref:struct:alg::FibHeap::node_t::list_head
+node_t	include/fib-heap.h	/^				struct node_t {$/;"	s	class:alg::FibHeap
+parent	include/fib-heap.h	/^					node_t * parent;$/;"	m	struct:alg::FibHeap::node_t
+value	include/fib-heap.h	/^					value_type value;$/;"	m	struct:alg::FibHeap::node_t
+value_type	include/fib-heap.h	/^				typedef _Val value_type;$/;"	t	class:alg::FibHeap
+ALGO_ALG_INC_H__	include/generic.h	13;"	d
+Max	include/generic.h	23;"	d
+Min	include/generic.h	24;"	d
+RANDOM	include/generic.h	27;"	d
+RANDOM_INIT	include/generic.h	26;"	d
+alg	include/generic.h	/^namespace alg {$/;"	n
+printlist	include/generic.h	/^		static void printlist(T & list,int count) {$/;"	f	namespace:alg
+remove_dup	include/generic.h	/^		static uint32_t remove_dup(T a[], uint32_t len) {$/;"	f	namespace:alg
+swap	include/generic.h	/^		static inline void swap(T &x, T &y)$/;"	f	namespace:alg
+ALGO_GRAPH_DEFS_H__	include/graph_defs.h	2;"	d
+Adjacent	include/graph_defs.h	/^				Adjacent(uint32_t id):v(id) {$/;"	f	struct:alg::Graph::Adjacent
+Adjacent	include/graph_defs.h	/^			struct Adjacent {$/;"	s	class:alg::Graph
+BLACK	include/graph_defs.h	/^			enum VertexColor { GRAY, WHITE, BLACK };$/;"	e	enum:alg::Graph::VertexColor
+GRAY	include/graph_defs.h	/^			enum VertexColor { GRAY, WHITE, BLACK };$/;"	e	enum:alg::Graph::VertexColor
+Graph	include/graph_defs.h	/^			Graph() {$/;"	f	class:alg::Graph
+Graph	include/graph_defs.h	/^	class Graph {$/;"	c	namespace:alg
+Vertex	include/graph_defs.h	/^				Vertex(uint32_t vid) {$/;"	f	struct:alg::Graph::Vertex
+Vertex	include/graph_defs.h	/^			struct Vertex {$/;"	s	class:alg::Graph
+VertexColor	include/graph_defs.h	/^			enum VertexColor { GRAY, WHITE, BLACK };$/;"	g	class:alg::Graph
+WHITE	include/graph_defs.h	/^			enum VertexColor { GRAY, WHITE, BLACK };$/;"	e	enum:alg::Graph::VertexColor
+a_head	include/graph_defs.h	/^			struct list_head a_head; \/\/ list header$/;"	m	class:alg::Graph	typeref:struct:alg::Graph::list_head
+a_node	include/graph_defs.h	/^				struct list_head a_node; $/;"	m	struct:alg::Graph::Adjacent	typeref:struct:alg::Graph::Adjacent::list_head
+alg	include/graph_defs.h	/^namespace alg {$/;"	n
+color	include/graph_defs.h	/^				int32_t color;	\/\/ color for searching$/;"	m	struct:alg::Graph::Adjacent
+d	include/graph_defs.h	/^				int32_t d;	\/\/ discover time$/;"	m	struct:alg::Graph::Adjacent
+delete_vertex	include/graph_defs.h	/^				void delete_vertex(uint32_t id) {$/;"	f	struct:alg::Graph::Adjacent
+edge_count	include/graph_defs.h	/^			uint32_t edge_count() const { return num_edges; }$/;"	f	class:alg::Graph
+f	include/graph_defs.h	/^				int32_t f;	\/\/ finish time$/;"	m	struct:alg::Graph::Adjacent
+graph_tick	include/graph_defs.h	/^			int32_t graph_tick;	\/\/ for counting discover & finish time$/;"	m	class:alg::Graph
+id	include/graph_defs.h	/^				uint32_t id;$/;"	m	struct:alg::Graph::Vertex
+is_adjacent	include/graph_defs.h	/^			bool is_adjacent(const struct Adjacent * from, const struct Adjacent * to) {$/;"	f	class:alg::Graph
+list	include/graph_defs.h	/^			const list_head & list() const {return a_head; }$/;"	f	class:alg::Graph
+num_edges	include/graph_defs.h	/^			uint32_t num_edges;$/;"	m	class:alg::Graph
+num_neigh	include/graph_defs.h	/^				uint32_t num_neigh;		\/\/ num of neighbours$/;"	m	struct:alg::Graph::Adjacent
+num_vertex	include/graph_defs.h	/^			uint32_t num_vertex;$/;"	m	class:alg::Graph
+operator []	include/graph_defs.h	/^				Vertex * operator[] (uint32_t id) const {$/;"	f	struct:alg::Graph::Adjacent
+operator []	include/graph_defs.h	/^			Adjacent * operator[] (uint32_t id) const {$/;"	f	class:alg::Graph
+print	include/graph_defs.h	/^			void print() const {$/;"	f	class:alg::Graph
+printdot	include/graph_defs.h	/^			void printdot() const {$/;"	f	class:alg::Graph
+v	include/graph_defs.h	/^				struct Vertex v;$/;"	m	struct:alg::Graph::Adjacent	typeref:struct:alg::Graph::Adjacent::Vertex
+v_head	include/graph_defs.h	/^				struct list_head v_head;  \/\/ vertex list header$/;"	m	struct:alg::Graph::Adjacent	typeref:struct:alg::Graph::Adjacent::list_head
+v_node	include/graph_defs.h	/^				struct list_head v_node; $/;"	m	struct:alg::Graph::Vertex	typeref:struct:alg::Graph::Vertex::list_head
+vertex	include/graph_defs.h	/^				const Vertex & vertex() const { return v;}$/;"	f	struct:alg::Graph::Adjacent
+vertex_count	include/graph_defs.h	/^			uint32_t vertex_count() const {	return num_vertex; }$/;"	f	class:alg::Graph
+weight	include/graph_defs.h	/^				int32_t weight;	$/;"	m	struct:alg::Graph::Vertex
+~Adjacent	include/graph_defs.h	/^				~Adjacent() {$/;"	f	struct:alg::Graph::Adjacent
+~Graph	include/graph_defs.h	/^			virtual ~Graph() {$/;"	f	class:alg::Graph
+ALGO_BREADTH_FIRST_SEARCH_H__	include/graph_search.h	24;"	d
+BFS	include/graph_search.h	/^	static void BFS(const Graph & g, int32_t src_id) {$/;"	f	namespace:alg
+DFS	include/graph_search.h	/^	static void DFS(Graph & g) {$/;"	f	namespace:alg
+_DFS_VISIT	include/graph_search.h	/^	static void _DFS_VISIT(Graph &g, Graph::Adjacent * u) {$/;"	f	namespace:alg
+alg	include/graph_search.h	/^namespace alg {$/;"	n
+ALGO_HASH_CODE_H__	include/hash_code.h	2;"	d
+alg	include/hash_code.h	/^namespace alg {$/;"	n
+hash_code	include/hash_code.h	/^	struct hash_code {$/;"	s	namespace:alg
+hash_code	include/hash_code.h	/^	struct hash_code<const char *> {$/;"	s	namespace:alg
+hash_code	include/hash_code.h	/^	struct hash_code<int32_t> {$/;"	s	namespace:alg
+hash_code	include/hash_code.h	/^	struct hash_code<uint32_t> {$/;"	s	namespace:alg
+operator ()	include/hash_code.h	/^		uint32_t operator()(T) {$/;"	f	struct:alg::hash_code
+operator ()	include/hash_code.h	/^		uint32_t operator()(const char* value) {$/;"	f	struct:alg::hash_code
+operator ()	include/hash_code.h	/^		uint32_t operator()(int32_t value) {$/;"	f	struct:alg::hash_code
+operator ()	include/hash_code.h	/^		uint32_t operator()(uint32_t value) {$/;"	f	struct:alg::hash_code
+A	include/hash_multi.h	/^		uint64_t A;$/;"	m	struct:alg::MultiHash
+ALGO_HASH_MULTIPLICATION_H__	include/hash_multi.h	19;"	d
+BITWIDTH	include/hash_multi.h	/^	static const short BITWIDTH = 32;$/;"	m	namespace:alg
+MultiHash	include/hash_multi.h	/^	struct MultiHash {$/;"	s	namespace:alg
+alg	include/hash_multi.h	/^namespace alg {$/;"	n
+log2	include/hash_multi.h	45;"	d
+multi_hash	include/hash_multi.h	/^	static inline uint32_t multi_hash(const struct MultiHash * ht, uint32_t key) {$/;"	f	namespace:alg
+multi_hash_init	include/hash_multi.h	/^	static MultiHash * multi_hash_init(uint32_t size) {$/;"	f	namespace:alg
+multi_hash_table_size	include/hash_multi.h	/^	static inline uint32_t multi_hash_table_size(const struct MultiHash * ht) { return 1<<(ht->r); } $/;"	f	namespace:alg
+r	include/hash_multi.h	/^		uint32_t r; \/\/ prime, init your hash table with size -> r$/;"	m	struct:alg::MultiHash
+ALGO_STRING_HASH_H__	include/hash_string.h	16;"	d
+alg	include/hash_string.h	/^namespace alg {$/;"	n
+hash_fnv1a	include/hash_string.h	/^	static uint32_t hash_fnv1a(const char * str, uint32_t len) {$/;"	f	namespace:alg
+hash_string	include/hash_string.h	/^	static uint32_t hash_string(const char * str, uint32_t len) {$/;"	f	namespace:alg
+ALGO_HASH_TABLE_H__	include/hash_table.h	18;"	d
+HashKV	include/hash_table.h	/^				struct HashKV {$/;"	s	class:alg::HashTable
+HashTable	include/hash_table.h	/^				HashTable(uint32_t max) {$/;"	f	class:alg::HashTable
+HashTable	include/hash_table.h	/^		class HashTable {$/;"	c	namespace:alg
+alg	include/hash_table.h	/^namespace alg {$/;"	n
+clear	include/hash_table.h	/^				void clear() {$/;"	f	class:alg::HashTable
+contains	include/hash_table.h	/^				bool contains(key_type key) const {$/;"	f	class:alg::HashTable
+delete_key	include/hash_table.h	/^				bool delete_key(key_type key) {$/;"	f	class:alg::HashTable
+hash_code_fn	include/hash_table.h	/^			typedef _HashCode hash_code_fn;$/;"	t	class:alg::HashTable
+key	include/hash_table.h	/^					key_type key;	\/\/ 32-bit key$/;"	m	struct:alg::HashTable::HashKV
+key_type	include/hash_table.h	/^			typedef _Key key_type;$/;"	t	class:alg::HashTable
+m_multi	include/hash_table.h	/^				struct MultiHash * m_multi;	\/\/ the hash function parameter.$/;"	m	class:alg::HashTable	typeref:struct:alg::HashTable::MultiHash
+m_size	include/hash_table.h	/^				uint32_t m_size;			\/\/ the size of the hash table.$/;"	m	class:alg::HashTable
+m_slots	include/hash_table.h	/^				struct list_head * m_slots;	\/\/ all of the slots, each slot is an linked-list$/;"	m	class:alg::HashTable	typeref:struct:alg::HashTable::list_head
+node	include/hash_table.h	/^					struct list_head node;	\/\/ KV is a list element.$/;"	m	struct:alg::HashTable::HashKV	typeref:struct:alg::HashTable::HashKV::list_head
+operator []	include/hash_table.h	/^				const value_type& operator[] (key_type key) const {$/;"	f	class:alg::HashTable
+operator []	include/hash_table.h	/^				value_type& operator[] (key_type key) {$/;"	f	class:alg::HashTable
+value	include/hash_table.h	/^					value_type value;		\/\/ value$/;"	m	struct:alg::HashTable::HashKV
+value_type	include/hash_table.h	/^			typedef _Value value_type;$/;"	t	class:alg::HashTable
+~HashTable	include/hash_table.h	/^				~HashTable() {$/;"	f	class:alg::HashTable
+ALGO_HEAP_H__	include/heap.h	32;"	d
+Heap	include/heap.h	/^				Heap(int max) {$/;"	f	class:alg::Heap
+Heap	include/heap.h	/^		class Heap {$/;"	c	namespace:alg
+alg	include/heap.h	/^namespace alg { $/;"	n
+clear	include/heap.h	/^				inline void clear() { m_size = 0; }$/;"	f	class:alg::Heap
+contains	include/heap.h	/^				bool contains(const T & data) {$/;"	f	class:alg::Heap
+count	include/heap.h	/^				inline int count() const { return m_size; };$/;"	f	class:alg::Heap
+data	include/heap.h	/^						T data;$/;"	m	struct:alg::Heap::elem
+decrease_key	include/heap.h	/^				void decrease_key(const T &data, int newkey) {$/;"	f	class:alg::Heap
+down	include/heap.h	/^				void down(int i, int n) {$/;"	f	class:alg::Heap
+elem	include/heap.h	/^				struct elem {$/;"	s	class:alg::Heap
+is_empty	include/heap.h	/^				inline bool is_empty() const { return (m_size==0)?true:false; }$/;"	f	class:alg::Heap
+key	include/heap.h	/^						int key;$/;"	m	struct:alg::Heap::elem
+less	include/heap.h	/^				bool less(int i, int j) {$/;"	f	class:alg::Heap
+m_heap	include/heap.h	/^				elem * m_heap;	\/\/ key value pairs.$/;"	m	class:alg::Heap
+m_max	include/heap.h	/^				int m_max;		\/\/ max heap size.$/;"	m	class:alg::Heap
+m_size	include/heap.h	/^				int m_size;		\/\/ current heap size.$/;"	m	class:alg::Heap
+pop	include/heap.h	/^				elem pop() {$/;"	f	class:alg::Heap
+print_heap	include/heap.h	/^				void print_heap() {$/;"	f	class:alg::Heap
+push	include/heap.h	/^				void push(int key, const T & data) {$/;"	f	class:alg::Heap
+remove	include/heap.h	/^				bool remove(const T &data) {$/;"	f	class:alg::Heap
+up	include/heap.h	/^				void up(int j) {$/;"	f	class:alg::Heap
+~Heap	include/heap.h	/^				~Heap() {$/;"	f	class:alg::Heap
+ALGO_HUFFMAN_CODING_H__	include/huffman.h	25;"	d
+HuffCode	include/huffman.h	/^			struct HuffCode {$/;"	s	class:alg::HuffTree
+HuffNode	include/huffman.h	/^			struct HuffNode{$/;"	s	class:alg::HuffTree
+HuffTree	include/huffman.h	/^			HuffTree(const char * sample) : m_symbol(256) {	$/;"	f	class:alg::HuffTree
+HuffTree	include/huffman.h	/^	class HuffTree {$/;"	c	namespace:alg
+alg	include/huffman.h	/^namespace alg {$/;"	n
+build_symbol	include/huffman.h	/^			void build_symbol(struct HuffNode * node, int k, char code[256]) {$/;"	f	class:alg::HuffTree
+code	include/huffman.h	/^				char code[256];		\/\/ max length is 256$/;"	m	struct:alg::HuffTree::HuffCode
+decode	include/huffman.h	/^			void decode(const char * codes, uint32_t length) {$/;"	f	class:alg::HuffTree
+encode	include/huffman.h	/^			uint32_t encode(const char * msg, char * codes) {$/;"	f	class:alg::HuffTree
+left	include/huffman.h	/^				struct HuffNode *left, *right;$/;"	m	struct:alg::HuffTree::HuffNode	typeref:struct:alg::HuffTree::HuffNode::HuffNode
+length	include/huffman.h	/^				uint32_t length;	\/\/ the length of the code;$/;"	m	struct:alg::HuffTree::HuffCode
+m_freqs	include/huffman.h	/^			uint32_t m_freqs[256];				\/\/ frequency array, you can pass this array $/;"	m	class:alg::HuffTree
+m_root	include/huffman.h	/^			HuffNode * m_root;					\/\/ the root node for decoding$/;"	m	class:alg::HuffTree
+m_symbol	include/huffman.h	/^			HashTable<uint32_t, HuffCode> m_symbol;		\/\/ hash table for encoding $/;"	m	class:alg::HuffTree
+recreate_from_freqs	include/huffman.h	/^			void recreate_from_freqs() {$/;"	f	class:alg::HuffTree
+right	include/huffman.h	/^				struct HuffNode *left, *right;$/;"	m	struct:alg::HuffTree::HuffNode	typeref:struct:alg::HuffTree::HuffNode::
+symbol	include/huffman.h	/^				unsigned char symbol;$/;"	m	struct:alg::HuffTree::HuffNode
+~HuffTree	include/huffman.h	/^			~HuffTree() {$/;"	f	class:alg::HuffTree
+ALGO_IMATH_H__	include/imath.h	13;"	d
+Exp	include/imath.h	/^	static unsigned Exp(unsigned base, unsigned exponent, unsigned modulus) {$/;"	f	namespace:alg
+KLEN	include/imath.h	38;"	d
+ZerosR	include/imath.h	/^	static inline int ZerosR(unsigned int v) {$/;"	f	namespace:alg
+alg	include/imath.h	/^namespace alg {$/;"	n
+dot_product	include/imath.h	/^	static uint32_t dot_product(const uint32_t * K, const uint32_t * A, uint32_t len) { $/;"	f	namespace:alg
+m_based	include/imath.h	/^	static void m_based(uint64_t key, int m, uint32_t k[]) {$/;"	f	namespace:alg
+ALGO_INSERTION_SORT_H__	include/insertion_sort.h	17;"	d
+alg	include/insertion_sort.h	/^namespace alg {$/;"	n
+insertion_sort	include/insertion_sort.h	/^		static void insertion_sort(T *array , int number_of_elements) {$/;"	f	namespace:alg
+ALGO_INTEGER_H__	include/integer.h	16;"	d
+COMPONENT_BITS	include/integer.h	33;"	d
+Integer	include/integer.h	/^			Integer(const Integer & rhs) {$/;"	f	class:alg::Integer
+Integer	include/integer.h	/^			Integer(int components) {$/;"	f	class:alg::Integer
+Integer	include/integer.h	/^	class Integer {$/;"	c	namespace:alg
+LOG_2_10	include/integer.h	35;"	d
+Max_COMPONENT	include/integer.h	32;"	d
+alg	include/integer.h	/^namespace alg {$/;"	n
+c	include/integer.h	/^			component_t* c;    \/* least-significant word first *\/$/;"	m	class:alg::Integer
+compare	include/integer.h	/^			int compare(const Integer & rhs) {$/;"	f	class:alg::Integer
+component_t	include/integer.h	/^			typedef unsigned short component_t;$/;"	t	class:alg::Integer
+components	include/integer.h	/^			inline const component_t * components() const { return c; } $/;"	f	class:alg::Integer
+double_component_t	include/integer.h	/^			typedef unsigned long double_component_t;$/;"	t	class:alg::Integer
+from_string	include/integer.h	/^			static const Integer from_string(const char* s) {$/;"	f	class:alg::Integer
+is_zero	include/integer.h	/^			bool is_zero() {$/;"	f	class:alg::Integer
+num_components	include/integer.h	/^			int num_components;$/;"	m	class:alg::Integer
+operator %	include/integer.h	/^			component_t operator% (component_t right) {$/;"	f	class:alg::Integer
+operator %	include/integer.h	/^			const Integer operator% (const Integer & rhs) {$/;"	f	class:alg::Integer
+operator *	include/integer.h	/^			const Integer operator* (const Integer & rhs) {$/;"	f	class:alg::Integer
+operator *	include/integer.h	/^			const Integer operator* (const component_t & rhs) {$/;"	f	class:alg::Integer
+operator +	include/integer.h	/^			const Integer operator+ (const Integer & rhs) {$/;"	f	class:alg::Integer
+operator -	include/integer.h	/^			const Integer operator- (const Integer & right) {$/;"	f	class:alg::Integer
+operator /	include/integer.h	/^			const Integer operator\/ (component_t rhs) {$/;"	f	class:alg::Integer
+operator =	include/integer.h	/^			Integer & operator= (const Integer & source)$/;"	f	class:alg::Integer
+operator []	include/integer.h	/^			inline component_t & operator[] (int i) { return c[i]; }$/;"	f	class:alg::Integer
+operator []	include/integer.h	/^			inline const component_t & operator[] (int i) const { return c[i]; }$/;"	f	class:alg::Integer
+shift_left_one_integer	include/integer.h	/^			void shift_left_one_integer() {$/;"	f	class:alg::Integer
+shift_right_one_integer	include/integer.h	/^			void shift_right_one_integer() {$/;"	f	class:alg::Integer
+size	include/integer.h	/^			inline uint32_t size() const { return num_components; }$/;"	f	class:alg::Integer
+to_string	include/integer.h	/^			char * to_string() const {$/;"	f	class:alg::Integer
+~Integer	include/integer.h	/^			~Integer() {$/;"	f	class:alg::Integer
+ALGO_INTERVAL_TREE_H__	include/interval_tree.h	20;"	d
+IVLNODE	include/interval_tree.h	42;"	d
+IVLNODE_M	include/interval_tree.h	43;"	d
+IntervalTree	include/interval_tree.h	/^			IntervalTree() { }$/;"	f	class:alg::IntervalTree
+IntervalTree	include/interval_tree.h	/^	class IntervalTree:public RBTreeAbstract {$/;"	c	namespace:alg
+alg	include/interval_tree.h	/^namespace alg {$/;"	n
+delete_key	include/interval_tree.h	/^			void delete_key(ivltree_node n) {$/;"	f	class:alg::IntervalTree
+destruct	include/interval_tree.h	/^			void destruct(ivltree_node n) {$/;"	f	class:alg::IntervalTree
+fixup_m	include/interval_tree.h	/^			void fixup_m(rbtree_node n) {$/;"	f	class:alg::IntervalTree
+high	include/interval_tree.h	/^				int high;	\/\/ higher-bound$/;"	m	struct:alg::IntervalTree::ivltree_node_t
+insert	include/interval_tree.h	/^			void insert(int low, int high) {$/;"	f	class:alg::IntervalTree
+ivltree_node	include/interval_tree.h	/^			} * ivltree_node;$/;"	t	class:alg::IntervalTree	typeref:struct:alg::IntervalTree::ivltree_node_t
+ivltree_node_t	include/interval_tree.h	/^			typedef struct ivltree_node_t : public rbtree_node_t {$/;"	s	class:alg::IntervalTree
+lookup	include/interval_tree.h	/^			ivltree_node lookup(int low, int high) {$/;"	f	class:alg::IntervalTree
+low	include/interval_tree.h	/^				int low;	\/\/ lower-bound$/;"	m	struct:alg::IntervalTree::ivltree_node_t
+m	include/interval_tree.h	/^				int m;		\/\/ max subtree upper bound value$/;"	m	struct:alg::IntervalTree::ivltree_node_t
+new_node	include/interval_tree.h	/^			ivltree_node new_node(int low, int high, color rbtree_node_color, rbtree_node left, rbtree_node right) {$/;"	f	class:alg::IntervalTree
+print	include/interval_tree.h	/^			void print() {$/;"	f	class:alg::IntervalTree
+print_helper	include/interval_tree.h	/^			void print_helper(ivltree_node n, int indent) {$/;"	f	class:alg::IntervalTree
+rotate_left_callback	include/interval_tree.h	/^			void rotate_left_callback(rbtree_node n, rbtree_node parent) {$/;"	f	class:alg::IntervalTree
+rotate_right_callback	include/interval_tree.h	/^			void rotate_right_callback(rbtree_node n, rbtree_node parent) {$/;"	f	class:alg::IntervalTree
+~IntervalTree	include/interval_tree.h	/^			~IntervalTree() {$/;"	f	class:alg::IntervalTree
+ALGO_KMEANS_H__	include/k-means.h	16;"	d
+CalcDistance	include/k-means.h	/^			double CalcDistance(const double* x,const double* u,int dimNum) {$/;"	f	class:alg::KMeans
+Cluster	include/k-means.h	/^			void Cluster(const char* sampleFileName, const char* labelFileName) {$/;"	f	class:alg::KMeans
+Cluster	include/k-means.h	/^			void Cluster(double *data, int N, int *Label) {$/;"	f	class:alg::KMeans
+GetEndError	include/k-means.h	/^			double GetEndError() { $/;"	f	class:alg::KMeans
+GetInitMode	include/k-means.h	/^			int GetInitMode() { $/;"	f	class:alg::KMeans
+GetLabel	include/k-means.h	/^			double GetLabel(const double* sample, int* label) {$/;"	f	class:alg::KMeans
+GetMaxIterNum	include/k-means.h	/^			int GetMaxIterNum()	{ $/;"	f	class:alg::KMeans
+GetMean	include/k-means.h	/^			double* GetMean(int i)	{ $/;"	f	class:alg::KMeans
+Init	include/k-means.h	/^			void Init(double *data, int N) {$/;"	f	class:alg::KMeans
+Init	include/k-means.h	/^			void Init(std::ifstream& sampleFile) {$/;"	f	class:alg::KMeans
+InitManual	include/k-means.h	/^				InitManual,$/;"	e	enum:alg::KMeans::InitMode
+InitMode	include/k-means.h	/^			enum InitMode {$/;"	g	class:alg::KMeans
+InitRandom	include/k-means.h	/^				InitRandom,$/;"	e	enum:alg::KMeans::InitMode
+InitUniform	include/k-means.h	/^				InitUniform,$/;"	e	enum:alg::KMeans::InitMode
+KMeans	include/k-means.h	/^			KMeans(int dimNum = 1, int clusterNum = 1) {$/;"	f	class:alg::KMeans
+KMeans	include/k-means.h	/^	class KMeans {$/;"	c	namespace:alg
+SetEndError	include/k-means.h	/^			void SetEndError(double f)	{$/;"	f	class:alg::KMeans
+SetInitMode	include/k-means.h	/^			void SetInitMode(int i)	{ $/;"	f	class:alg::KMeans
+SetMaxIterNum	include/k-means.h	/^			void SetMaxIterNum(int i) { $/;"	f	class:alg::KMeans
+SetMean	include/k-means.h	/^			void SetMean(int i, const double* u) { $/;"	f	class:alg::KMeans
+alg	include/k-means.h	/^namespace alg {$/;"	n
+m_clusterNum	include/k-means.h	/^			int m_clusterNum;$/;"	m	class:alg::KMeans
+m_dimNum	include/k-means.h	/^			int m_dimNum;$/;"	m	class:alg::KMeans
+m_endError	include/k-means.h	/^			double m_endError;$/;"	m	class:alg::KMeans
+m_initMode	include/k-means.h	/^			int m_initMode;$/;"	m	class:alg::KMeans
+m_maxIterNum	include/k-means.h	/^			int m_maxIterNum;$/;"	m	class:alg::KMeans
+m_means	include/k-means.h	/^			double** m_means;$/;"	m	class:alg::KMeans
+operator <<	include/k-means.h	/^			friend std::ostream& operator<<(std::ostream& out, KMeans& kmeans) {$/;"	f	class:alg::KMeans
+~KMeans	include/k-means.h	/^			~KMeans() {$/;"	f	class:alg::KMeans
+ALGO_KMP_H__	include/kmp.h	19;"	d
+alg	include/kmp.h	/^namespace alg {$/;"	n
+kmp_search	include/kmp.h	/^	static int kmp_search(const char * S, const char * W) {$/;"	f	namespace:alg
+kmp_table	include/kmp.h	/^	static void kmp_table(const char *W, int * T, int len) {$/;"	f	namespace:alg
+ALGO_KRUSKAL_MST_H__	include/kruskal_mst.h	29;"	d
+Kruskal	include/kruskal_mst.h	/^			Kruskal(const Graph & g) {$/;"	f	class:alg::Kruskal
+Kruskal	include/kruskal_mst.h	/^	class Kruskal {$/;"	c	namespace:alg
+KruskalAdjacent	include/kruskal_mst.h	/^				KruskalAdjacent(const Graph::Vertex & vertex, uint32_t num_neigh):heap(num_neigh),v(vertex) { }$/;"	f	struct:alg::Kruskal::KruskalAdjacent
+KruskalAdjacent	include/kruskal_mst.h	/^			struct KruskalAdjacent {$/;"	s	class:alg::Kruskal
+KruskalGraph	include/kruskal_mst.h	/^			typedef struct list_head KruskalGraph;$/;"	t	class:alg::Kruskal	typeref:struct:alg::Kruskal::list_head
+add_adjacent	include/kruskal_mst.h	/^			void add_adjacent(const Graph::Adjacent & a) {$/;"	f	class:alg::Kruskal
+alg	include/kruskal_mst.h	/^namespace alg {$/;"	n
+heap	include/kruskal_mst.h	/^				Heap<Graph::Vertex*> heap; 		\/\/ binary heap representation of weight->node$/;"	m	struct:alg::Kruskal::KruskalAdjacent
+lookup	include/kruskal_mst.h	/^			KruskalAdjacent * lookup(uint32_t id) const {$/;"	f	class:alg::Kruskal
+m_pg	include/kruskal_mst.h	/^			KruskalGraph m_pg;$/;"	m	class:alg::Kruskal
+num_vertex	include/kruskal_mst.h	/^			uint32_t num_vertex;$/;"	m	class:alg::Kruskal
+pa_node	include/kruskal_mst.h	/^				struct list_head pa_node;$/;"	m	struct:alg::Kruskal::KruskalAdjacent	typeref:struct:alg::Kruskal::KruskalAdjacent::list_head
+print	include/kruskal_mst.h	/^			void print() {$/;"	f	class:alg::Kruskal
+run	include/kruskal_mst.h	/^			Graph * run() {$/;"	f	class:alg::Kruskal
+v	include/kruskal_mst.h	/^				const Graph::Vertex & v;$/;"	m	struct:alg::Kruskal::KruskalAdjacent
+~Kruskal	include/kruskal_mst.h	/^			~Kruskal() {$/;"	f	class:alg::Kruskal
+ALGO_LCS_H__	include/lcs.h	15;"	d
+alg	include/lcs.h	/^namespace alg {$/;"	n
+lcs_backtrack	include/lcs.h	/^		static void lcs_backtrack(Stack<int> & S, Array2D<uint32_t> & A,$/;"	f	namespace:alg
+lcs_length	include/lcs.h	/^		static Array2D<uint32_t> * lcs_length(const T X[], uint32_t m, const T Y[], uint32_t n) {$/;"	f	namespace:alg
+MAX_SUBARRAY__	include/max_subarray.h	25;"	d
+alg	include/max_subarray.h	/^namespace alg {$/;"	n
+max_subarray	include/max_subarray.h	/^	static void max_subarray(int arr[], int len,  int *begin, int *end) {$/;"	f	namespace:alg
+ALGO_MD5_H__	include/md5.h	27;"	d
+F	include/md5.h	46;"	d
+FF	include/md5.h	56;"	d
+G	include/md5.h	47;"	d
+GG	include/md5.h	61;"	d
+H	include/md5.h	48;"	d
+HH	include/md5.h	66;"	d
+I	include/md5.h	49;"	d
+II	include/md5.h	71;"	d
+MD5Final	include/md5.h	/^MD5Final (MD5_CTX *mdContext)$/;"	f
+MD5Init	include/md5.h	/^MD5Init (MD5_CTX * mdContext)$/;"	f
+MD5Transform	include/md5.h	/^MD5Transform (uint32_t * buf, uint32_t * in)$/;"	f
+MD5Update	include/md5.h	/^MD5Update (MD5_CTX * mdContext, unsigned char * inBuf, uint32_t inLen)$/;"	f
+MD5_CTX	include/md5.h	/^} MD5_CTX;$/;"	t	typeref:struct:__anon1
+ROTATE_LEFT	include/md5.h	52;"	d
+S11	include/md5.h	194;"	d
+S12	include/md5.h	195;"	d
+S13	include/md5.h	196;"	d
+S14	include/md5.h	197;"	d
+S21	include/md5.h	216;"	d
+S22	include/md5.h	217;"	d
+S23	include/md5.h	218;"	d
+S24	include/md5.h	219;"	d
+S31	include/md5.h	238;"	d
+S32	include/md5.h	239;"	d
+S33	include/md5.h	240;"	d
+S34	include/md5.h	241;"	d
+S41	include/md5.h	260;"	d
+S42	include/md5.h	261;"	d
+S43	include/md5.h	262;"	d
+S44	include/md5.h	263;"	d
+buf	include/md5.h	/^  uint32_t buf[4];                                    \/* scratch buffer *\/$/;"	m	struct:__anon1
+digest	include/md5.h	/^  unsigned char digest[16];     \/* actual digest after MD5Final call *\/$/;"	m	struct:__anon1
+i	include/md5.h	/^  uint32_t i[2];                   \/* number of _bits_ handled mod 2^64 *\/$/;"	m	struct:__anon1
+in	include/md5.h	/^  unsigned char in[64];                              \/* input buffer *\/$/;"	m	struct:__anon1
+ALGO_MERGE_SORT_H__	include/merge_sort.h	36;"	d
+alg	include/merge_sort.h	/^namespace alg {$/;"	n
+merge_	include/merge_sort.h	/^		static void merge_(T *array, int left, int mid, int right) {$/;"	f	namespace:alg
+merge_sort	include/merge_sort.h	/^		static void merge_sort(T *array, int left, int right) {$/;"	f	namespace:alg
+_PALINDROME_H_	include/palindrome.h	21;"	d
+alg	include/palindrome.h	/^namespace alg {$/;"	n
+palindrome	include/palindrome.h	/^	static void palindrome(const char * S) {$/;"	f	namespace:alg
+ALGO_PERFECT_HASH_H__	include/perfect_hash.h	14;"	d
+PerfHT	include/perfect_hash.h	/^				PerfHT(uint32_t keys[], uint32_t len) {$/;"	f	class:alg::PerfHT
+PerfHT	include/perfect_hash.h	/^		class PerfHT {$/;"	c	namespace:alg
+PerfHTException	include/perfect_hash.h	/^				class PerfHTException: public std::exception {$/;"	c	class:alg::PerfHT
+SlotL1	include/perfect_hash.h	/^				struct SlotL1 {$/;"	s	class:alg::PerfHT
+SlotL2	include/perfect_hash.h	/^				struct SlotL2 {$/;"	s	class:alg::PerfHT
+alg	include/perfect_hash.h	/^namespace alg {$/;"	n
+cnt	include/perfect_hash.h	/^						uint32_t cnt;			 	\/\/ collison count$/;"	m	struct:alg::PerfHT::SlotL1
+cnt	include/perfect_hash.h	/^						uint32_t cnt;	\/\/ collison count$/;"	m	struct:alg::PerfHT::SlotL2
+excp_key	include/perfect_hash.h	/^				} excp_key;$/;"	m	class:alg::PerfHT	typeref:class:alg::PerfHT::PerfHTException
+key	include/perfect_hash.h	/^						uint32_t key;				\/\/ key	$/;"	m	struct:alg::PerfHT::SlotL1
+key	include/perfect_hash.h	/^						uint32_t key;	\/\/key$/;"	m	struct:alg::PerfHT::SlotL2
+lv2_init	include/perfect_hash.h	/^				void lv2_init(uint32_t keys[], uint32_t len) {$/;"	f	class:alg::PerfHT
+lv2_slot_init	include/perfect_hash.h	/^				void lv2_slot_init(struct SlotL1 * lv1_slot, Stack<uint32_t> & collides) {$/;"	f	class:alg::PerfHT
+lv2_slots	include/perfect_hash.h	/^						struct SlotL2 * lv2_slots;	\/\/ level 2 slots$/;"	m	struct:alg::PerfHT::SlotL1	typeref:struct:alg::PerfHT::SlotL1::SlotL2
+num_slots	include/perfect_hash.h	/^				uint32_t num_slots;$/;"	m	class:alg::PerfHT
+operator []	include/perfect_hash.h	/^				T& operator[] (uint32_t key) throw (PerfHTException) {$/;"	f	class:alg::PerfHT
+operator []	include/perfect_hash.h	/^				const T& operator[] (uint32_t key) const throw (PerfHTException) {$/;"	f	class:alg::PerfHT
+params	include/perfect_hash.h	/^						struct UHash params;	 	\/\/ 2nd level $/;"	m	struct:alg::PerfHT::SlotL1	typeref:struct:alg::PerfHT::SlotL1::UHash
+params	include/perfect_hash.h	/^				struct UHash params;   \/\/ 1st level $/;"	m	class:alg::PerfHT	typeref:struct:alg::PerfHT::UHash
+slots	include/perfect_hash.h	/^				struct SlotL1 * slots;	\/\/ level 1 slots$/;"	m	class:alg::PerfHT	typeref:struct:alg::PerfHT::SlotL1
+value	include/perfect_hash.h	/^						T value;					\/\/ value$/;"	m	struct:alg::PerfHT::SlotL1
+value	include/perfect_hash.h	/^						T value;		\/\/ value$/;"	m	struct:alg::PerfHT::SlotL2
+what	include/perfect_hash.h	/^						virtual const char * what() const throw() {$/;"	f	class:alg::PerfHT::PerfHTException
+~PerfHT	include/perfect_hash.h	/^				~PerfHT() {$/;"	f	class:alg::PerfHT
+~SlotL1	include/perfect_hash.h	/^						~SlotL1() {$/;"	f	struct:alg::PerfHT::SlotL1
+ALGO_PRIM_MST_H__	include/prim_mst.h	26;"	d
+LARGE_NUMBER	include/prim_mst.h	/^			static const int LARGE_NUMBER = 999999;$/;"	m	class:alg::Prim
+Prim	include/prim_mst.h	/^	class Prim {$/;"	c	namespace:alg
+alg	include/prim_mst.h	/^namespace alg {$/;"	n
+run	include/prim_mst.h	/^			static Graph * run(const Graph & g, int32_t src_id) {$/;"	f	class:alg::Prim
+ALGO_PRIME_H__	include/prime.h	15;"	d
+alg	include/prime.h	/^namespace alg {$/;"	n
+is_prime	include/prime.h	/^	static inline bool is_prime(unsigned int n) {$/;"	f	namespace:alg
+miller_rabin_test	include/prime.h	/^	static inline bool miller_rabin_test(unsigned int n) {$/;"	f	namespace:alg
+test_prime	include/prime.h	/^	static bool test_prime(unsigned int n) {$/;"	f	namespace:alg
+ALGO_PRIORITY_QUEUE_H__	include/priority_queue.h	19;"	d
+PQ	include/priority_queue.h	/^			PQ() {$/;"	f	class:alg::PQ
+PQ	include/priority_queue.h	/^		class PQ {$/;"	c	namespace:alg
+PQNode	include/priority_queue.h	/^			struct PQNode {$/;"	s	class:alg::PQ
+alg	include/priority_queue.h	/^namespace alg {$/;"	n
+count	include/priority_queue.h	/^			inline uint32_t count() const { return m_count; }$/;"	f	class:alg::PQ
+dequeue	include/priority_queue.h	/^			inline void dequeue() {$/;"	f	class:alg::PQ
+is_empty	include/priority_queue.h	/^			inline bool is_empty() const {$/;"	f	class:alg::PQ
+m_count	include/priority_queue.h	/^			uint32_t m_count;$/;"	m	class:alg::PQ
+m_head	include/priority_queue.h	/^			struct list_head m_head;	$/;"	m	class:alg::PQ	typeref:struct:alg::PQ::list_head
+node	include/priority_queue.h	/^				struct list_head node;$/;"	m	struct:alg::PQ::PQNode	typeref:struct:alg::PQ::PQNode::list_head
+priority	include/priority_queue.h	/^				int priority;		$/;"	m	struct:alg::PQ::PQNode
+queue	include/priority_queue.h	/^			void queue(const T &value, uint32_t priority) {$/;"	f	class:alg::PQ
+top	include/priority_queue.h	/^			inline const T & top(int * prio) const {$/;"	f	class:alg::PQ
+value	include/priority_queue.h	/^				T value;$/;"	m	struct:alg::PQ::PQNode
+~PQ	include/priority_queue.h	/^			~PQ() {$/;"	f	class:alg::PQ
+ALGO_QUEUE_H__	include/queue.h	17;"	d
+Queue	include/queue.h	/^				Queue(uint32_t max) {$/;"	f	class:alg::Queue
+Queue	include/queue.h	/^		class Queue {$/;"	c	namespace:alg
+QueueEmptyException	include/queue.h	/^				class QueueEmptyException: public std::exception {$/;"	c	class:alg::Queue
+alg	include/queue.h	/^namespace alg {$/;"	n
+capcity	include/queue.h	/^				inline uint32_t capcity() const { return m_capacity; };$/;"	f	class:alg::Queue
+count	include/queue.h	/^				inline uint32_t count() const { return m_size; };$/;"	f	class:alg::Queue
+dequeue	include/queue.h	/^				inline void dequeue() {$/;"	f	class:alg::Queue
+enqueue	include/queue.h	/^				bool enqueue(const T & element) {$/;"	f	class:alg::Queue
+excp_empty	include/queue.h	/^				} excp_empty;$/;"	m	class:alg::Queue	typeref:class:alg::Queue::QueueEmptyException
+front	include/queue.h	/^				inline const T& front() const {$/;"	f	class:alg::Queue
+is_empty	include/queue.h	/^				inline bool is_empty() const {$/;"	f	class:alg::Queue
+m_capacity	include/queue.h	/^				uint32_t m_capacity;		\/\/ queue capacity$/;"	m	class:alg::Queue
+m_elements	include/queue.h	/^				T * m_elements;	\/\/ the elements$/;"	m	class:alg::Queue
+m_front	include/queue.h	/^				uint32_t m_front;			\/\/ index of the first element$/;"	m	class:alg::Queue
+m_rear	include/queue.h	/^				uint32_t m_rear;			\/\/ index of the last element$/;"	m	class:alg::Queue
+m_size	include/queue.h	/^				uint32_t m_size;			\/\/ current queue size$/;"	m	class:alg::Queue
+what	include/queue.h	/^						virtual const char * what() const throw() {$/;"	f	class:alg::Queue::QueueEmptyException
+~Queue	include/queue.h	/^				~Queue() {$/;"	f	class:alg::Queue
+ALGO_QUICKSORT_H__	include/quick_sort.h	19;"	d
+alg	include/quick_sort.h	/^namespace alg {$/;"	n
+partition_	include/quick_sort.h	/^		static int partition_(T list[],int begin, int end) {$/;"	f	namespace:alg
+quicksort	include/quick_sort.h	/^		static void quicksort(T list[],int begin,int end) {$/;"	f	namespace:alg
+ALGO_RADIX_SORT_H__	include/radix_sort.h	19;"	d
+alg	include/radix_sort.h	/^namespace alg {$/;"	n
+check_order	include/radix_sort.h	/^	static void check_order(const uint32_t *data, unsigned N) {$/;"	f	namespace:alg
+radix_	include/radix_sort.h	/^	static void radix_(int byte, const unsigned N, const uint32_t *source, uint32_t *dest) {$/;"	f	namespace:alg
+radix_sort	include/radix_sort.h	/^	static void radix_sort(uint32_t *source, const unsigned N) {$/;"	f	namespace:alg
+ALGO_RANDOM_H__	include/random.h	15;"	d
+LCG	include/random.h	/^	static uint32_t LCG() {$/;"	f	namespace:alg
+alg	include/random.h	/^namespace alg {$/;"	n
+ALGO_RANDOM_SELECT_H__	include/random_select.h	21;"	d
+alg	include/random_select.h	/^namespace alg {$/;"	n
+partition_	include/random_select.h	/^		static int partition_(T list[],int begin, int end) {$/;"	f	namespace:alg
+random_select	include/random_select.h	/^		static int random_select(T list[], int begin, int end, int k) {$/;"	f	namespace:alg
+ALGO_RBTREE_H__	include/rbtree.h	19;"	d
+KVNODE	include/rbtree.h	35;"	d
+KVNode	include/rbtree.h	/^				struct KVNode: public rbtree_node_t {$/;"	s	class:alg::RBTree
+RBTree	include/rbtree.h	/^		class RBTree:public RBTreeAbstract {	$/;"	c	namespace:alg
+alg	include/rbtree.h	/^namespace alg {$/;"	n
+contains	include/rbtree.h	/^				bool contains(KeyT key) {$/;"	f	class:alg::RBTree
+delete_key	include/rbtree.h	/^				void delete_key(KeyT key) {$/;"	f	class:alg::RBTree
+destruct	include/rbtree.h	/^				void destruct(KVNode * n) {$/;"	f	class:alg::RBTree
+insert	include/rbtree.h	/^				void insert(const KeyT & key, const ValueT & value) {$/;"	f	class:alg::RBTree
+key	include/rbtree.h	/^					KeyT key;$/;"	m	struct:alg::RBTree::KVNode
+lookup_node	include/rbtree.h	/^				KVNode * lookup_node(KeyT key) {$/;"	f	class:alg::RBTree
+new_node	include/rbtree.h	/^				KVNode * new_node(KeyT key, ValueT value, color rbtree_node_color, rbtree_node left, rbtree_node right) {$/;"	f	class:alg::RBTree
+operator []	include/rbtree.h	/^				ValueT operator [] (KeyT key) {$/;"	f	class:alg::RBTree
+print	include/rbtree.h	/^				void print() {$/;"	f	class:alg::RBTree
+print_helper	include/rbtree.h	/^				void print_helper(KVNode * n, int indent) {$/;"	f	class:alg::RBTree
+value	include/rbtree.h	/^					ValueT value;$/;"	m	struct:alg::RBTree::KVNode
+~RBTree	include/rbtree.h	/^				~RBTree() {$/;"	f	class:alg::RBTree
+ALGO_RBTREE_DEFS_H__	include/rbtree_defs.h	19;"	d
+BLACK	include/rbtree_defs.h	/^			enum rbtree_node_color { RED, BLACK };$/;"	e	enum:alg::RBTreeAbstract::rbtree_node_color
+INDENT_STEP	include/rbtree_defs.h	/^			static const int INDENT_STEP=4;$/;"	m	class:alg::RBTreeAbstract
+RBTreeAbstract	include/rbtree_defs.h	/^			RBTreeAbstract() : m_root(NULL) {}$/;"	f	class:alg::RBTreeAbstract
+RBTreeAbstract	include/rbtree_defs.h	/^	class RBTreeAbstract {$/;"	c	namespace:alg
+RED	include/rbtree_defs.h	/^			enum rbtree_node_color { RED, BLACK };$/;"	e	enum:alg::RBTreeAbstract::rbtree_node_color
+alg	include/rbtree_defs.h	/^namespace alg {$/;"	n
+color	include/rbtree_defs.h	/^				enum rbtree_node_color color;$/;"	m	struct:alg::RBTreeAbstract::rbtree_node_t	typeref:enum:alg::RBTreeAbstract::rbtree_node_t::rbtree_node_color
+color	include/rbtree_defs.h	/^			typedef enum rbtree_node_color color;$/;"	t	class:alg::RBTreeAbstract	typeref:enum:alg::RBTreeAbstract::rbtree_node_color
+delete_case1	include/rbtree_defs.h	/^			void delete_case1(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+delete_case2	include/rbtree_defs.h	/^			void delete_case2(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+delete_case3	include/rbtree_defs.h	/^			void delete_case3(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+delete_case4	include/rbtree_defs.h	/^			void delete_case4(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+delete_case5	include/rbtree_defs.h	/^			void delete_case5(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+delete_case6	include/rbtree_defs.h	/^			void delete_case6(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+get_root	include/rbtree_defs.h	/^			inline rbtree_node get_root( ) { return m_root; }$/;"	f	class:alg::RBTreeAbstract
+grandparent	include/rbtree_defs.h	/^			rbtree_node grandparent(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+insert_case1	include/rbtree_defs.h	/^			void insert_case1(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+insert_case2	include/rbtree_defs.h	/^			void insert_case2(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+insert_case3	include/rbtree_defs.h	/^			void insert_case3(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+insert_case4	include/rbtree_defs.h	/^			void insert_case4(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+insert_case5	include/rbtree_defs.h	/^			void insert_case5(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+left	include/rbtree_defs.h	/^				rbtree_node_t* left;$/;"	m	struct:alg::RBTreeAbstract::rbtree_node_t
+m_root	include/rbtree_defs.h	/^			rbtree_node m_root;$/;"	m	class:alg::RBTreeAbstract
+maximum_node	include/rbtree_defs.h	/^			rbtree_node maximum_node(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+node_color	include/rbtree_defs.h	/^			color node_color(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+parent	include/rbtree_defs.h	/^				rbtree_node_t* parent;$/;"	m	struct:alg::RBTreeAbstract::rbtree_node_t
+rbtree_node	include/rbtree_defs.h	/^			} *rbtree_node;$/;"	t	class:alg::RBTreeAbstract	typeref:struct:alg::RBTreeAbstract::rbtree_node_t
+rbtree_node_color	include/rbtree_defs.h	/^			enum rbtree_node_color { RED, BLACK };$/;"	g	class:alg::RBTreeAbstract
+rbtree_node_t	include/rbtree_defs.h	/^			typedef struct rbtree_node_t {$/;"	s	class:alg::RBTreeAbstract
+replace_node	include/rbtree_defs.h	/^			void replace_node(rbtree_node oldn, rbtree_node newn) {$/;"	f	class:alg::RBTreeAbstract
+right	include/rbtree_defs.h	/^				rbtree_node_t* right;$/;"	m	struct:alg::RBTreeAbstract::rbtree_node_t
+rotate_left	include/rbtree_defs.h	/^			void rotate_left(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+rotate_left_callback	include/rbtree_defs.h	/^			virtual void rotate_left_callback(rbtree_node n1, rbtree_node n2) { }$/;"	f	class:alg::RBTreeAbstract
+rotate_right	include/rbtree_defs.h	/^			void rotate_right(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+rotate_right_callback	include/rbtree_defs.h	/^			virtual void rotate_right_callback(rbtree_node n1, rbtree_node n2) { }$/;"	f	class:alg::RBTreeAbstract
+set_root	include/rbtree_defs.h	/^			inline void set_root(rbtree_node new_root) { m_root = new_root; }$/;"	f	class:alg::RBTreeAbstract
+sibling	include/rbtree_defs.h	/^			rbtree_node sibling(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+uncle	include/rbtree_defs.h	/^			rbtree_node uncle(rbtree_node n) {$/;"	f	class:alg::RBTreeAbstract
+~RBTreeAbstract	include/rbtree_defs.h	/^			virtual ~RBTreeAbstract() {}$/;"	f	class:alg::RBTreeAbstract
+ALGO_RELABEL_TO_FRONT_H__	include/relabel_to_front.h	13;"	d
+RelabelToFront	include/relabel_to_front.h	/^		RelabelToFront(const Graph & graph):$/;"	f	class:alg::RelabelToFront
+RelabelToFront	include/relabel_to_front.h	/^	class RelabelToFront	{$/;"	c	namespace:alg
+alg	include/relabel_to_front.h	/^namespace alg {$/;"	n
+discharge	include/relabel_to_front.h	/^		void discharge(int from) {$/;"	f	class:alg::RelabelToFront
+e	include/relabel_to_front.h	/^		HashTable<uint32_t, int> e;	\/\/excess flow$/;"	m	class:alg::RelabelToFront
+excess	include/relabel_to_front.h	/^		inline const HashTable<uint32_t, int> & excess() const { return e; }$/;"	f	class:alg::RelabelToFront
+g	include/relabel_to_front.h	/^		const Graph & g;$/;"	m	class:alg::RelabelToFront
+h	include/relabel_to_front.h	/^		HashTable<uint32_t, int> h;	\/\/value of height function$/;"	m	class:alg::RelabelToFront
+height	include/relabel_to_front.h	/^		inline const HashTable<uint32_t, int> & height() const { return h; }$/;"	f	class:alg::RelabelToFront
+initialize_preflow	include/relabel_to_front.h	/^		void initialize_preflow(uint32_t src) {$/;"	f	class:alg::RelabelToFront
+m_map	include/relabel_to_front.h	/^		HashTable<uint32_t, uint32_t> m_map;$/;"	m	class:alg::RelabelToFront
+m_residual	include/relabel_to_front.h	/^		Array2D<int> m_residual;$/;"	m	class:alg::RelabelToFront
+m_rmap	include/relabel_to_front.h	/^		HashTable<uint32_t, uint32_t> m_rmap;$/;"	m	class:alg::RelabelToFront
+map	include/relabel_to_front.h	/^		inline const HashTable<uint32_t, uint32_t> & map() const {return m_map; }$/;"	f	class:alg::RelabelToFront
+possible_residual_edge	include/relabel_to_front.h	/^		DirectedGraph * possible_residual_edge;	\/\/ record possible residual edges$/;"	m	class:alg::RelabelToFront
+push	include/relabel_to_front.h	/^		void push(int from, int to) {$/;"	f	class:alg::RelabelToFront
+relabel	include/relabel_to_front.h	/^		void relabel(int from) {$/;"	f	class:alg::RelabelToFront
+relabel	include/relabel_to_front.h	/^		void relabel(int from, int height) {$/;"	f	class:alg::RelabelToFront
+residual	include/relabel_to_front.h	/^		inline const Array2D<int> & residual() const { return m_residual; }$/;"	f	class:alg::RelabelToFront
+rmap	include/relabel_to_front.h	/^		inline const HashTable<uint32_t, uint32_t> & rmap() const { return m_rmap; }$/;"	f	class:alg::RelabelToFront
+run	include/relabel_to_front.h	/^		int run(uint32_t src, uint32_t sink) {$/;"	f	class:alg::RelabelToFront
+run_push_relabel	include/relabel_to_front.h	/^		int run_push_relabel(uint32_t src, uint32_t sink) {$/;"	f	class:alg::RelabelToFront
+~RelabelToFront	include/relabel_to_front.h	/^		~RelabelToFront() {$/;"	f	class:alg::RelabelToFront
+ALGO_SCC_H__	include/scc.h	21;"	d
+SCC	include/scc.h	/^	static void SCC(DirectedGraph &g) {$/;"	f	namespace:alg
+alg	include/scc.h	/^namespace alg {$/;"	n
+ALGO_SELECTION_SORT_H__	include/selection_sort.h	21;"	d
+SelectionSort	include/selection_sort.h	/^		static void SelectionSort(T list[], int start, int end) {$/;"	f	namespace:alg
+alg	include/selection_sort.h	/^namespace alg {$/;"	n
+ALGO_SHA1_H__	include/sha1.h	41;"	d
+SHA1CircularShift	include/sha1.h	66;"	d
+SHA1Context	include/sha1.h	/^typedef struct SHA1Context$/;"	s
+SHA1Context	include/sha1.h	/^} SHA1Context;$/;"	t	typeref:struct:SHA1Context
+block	include/sha1.h	/^    unsigned char block[64]; \/* 512-bit message blocks      *\/$/;"	m	struct:SHA1Context
+computed	include/sha1.h	/^    int computed;               \/* Is the digest computed?          *\/$/;"	m	struct:SHA1Context
+corrupted	include/sha1.h	/^    int corrupted;              \/* Is the message digest corruped?  *\/$/;"	m	struct:SHA1Context
+digest	include/sha1.h	/^    unsigned digest[5]; \/* Message Digest (output)          *\/$/;"	m	struct:SHA1Context
+index	include/sha1.h	/^    int index;    \/* Index into message block array   *\/$/;"	m	struct:SHA1Context
+m_high	include/sha1.h	/^    unsigned m_high;       \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+m_low	include/sha1.h	/^    unsigned m_low;        \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+sha1_final	include/sha1.h	/^sha1_final(SHA1Context *context)$/;"	f
+sha1_input	include/sha1.h	/^sha1_input(SHA1Context         *context,$/;"	f
+sha1_pad	include/sha1.h	/^sha1_pad(SHA1Context *context)$/;"	f
+sha1_process_block	include/sha1.h	/^sha1_process_block(SHA1Context *context)$/;"	f
+sha1_reset	include/sha1.h	/^sha1_reset(SHA1Context *context)$/;"	f
+ALGO_SHELL_SORT_H__	include/shell_sort.h	17;"	d
+alg	include/shell_sort.h	/^namespace alg {$/;"	n
+shell_sort	include/shell_sort.h	/^		static void shell_sort(T *array, int len) {$/;"	f	namespace:alg
+ALGO_SHUFFLE_H__	include/shuffle.h	18;"	d
+alg	include/shuffle.h	/^namespace alg {$/;"	n
+shuffle	include/shuffle.h	/^		static void shuffle(T * list, int len) {$/;"	f	namespace:alg
+ALGO_SIMHASH_H__	include/simhash.h	16;"	d
+AddWord	include/simhash.h	/^			void AddWord(const char * word, uint32_t len) {$/;"	f	class:alg::SimHash
+Distance	include/simhash.h	/^			static int Distance(uint32_t hash1, uint32_t hash2) {$/;"	f	class:alg::SimHash
+Hash	include/simhash.h	/^			uint32_t Hash() {$/;"	f	class:alg::SimHash
+SimHash	include/simhash.h	/^			SimHash() {$/;"	f	class:alg::SimHash
+SimHash	include/simhash.h	/^	class SimHash {$/;"	c	namespace:alg
+V	include/simhash.h	/^			int V[32];$/;"	m	class:alg::SimHash
+alg	include/simhash.h	/^namespace alg {$/;"	n
+ALGO_SKIP_LIST_H__	include/skiplist.h	15;"	d
+NotFoundException	include/skiplist.h	/^		class NotFoundException: public std::exception {$/;"	c	class:alg::SkipList
+SL_MAX_LEVEL	include/skiplist.h	/^		static const int SL_MAX_LEVEL = 6;$/;"	m	class:alg::SkipList
+SkipList	include/skiplist.h	/^		SkipList() {$/;"	f	class:alg::SkipList
+SkipList	include/skiplist.h	/^	class SkipList {$/;"	c	namespace:alg
+SkipNode	include/skiplist.h	/^		struct SkipNode {$/;"	s	class:alg::SkipList
+alg	include/skiplist.h	/^namespace alg {$/;"	n
+delete_key	include/skiplist.h	/^		void delete_key(KeyT key) {$/;"	f	class:alg::SkipList
+excp_notfound	include/skiplist.h	/^		} excp_notfound;$/;"	m	class:alg::SkipList	typeref:class:alg::SkipList::NotFoundException
+forward	include/skiplist.h	/^			SkipNode ** forward;  	\/\/ pointers to different levels $/;"	m	struct:alg::SkipList::SkipNode
+insert	include/skiplist.h	/^		void insert(KeyT key, ValueT value) {$/;"	f	class:alg::SkipList
+key	include/skiplist.h	/^			KeyT	key;			\/\/ key$/;"	m	struct:alg::SkipList::SkipNode
+m_header	include/skiplist.h	/^		struct SkipNode * m_header;	\/\/ the header node, empty$/;"	m	class:alg::SkipList	typeref:struct:alg::SkipList::SkipNode
+m_level	include/skiplist.h	/^		int m_level;				\/\/ the max level of skip list$/;"	m	class:alg::SkipList
+make_node	include/skiplist.h	/^		SkipNode * make_node(int level, KeyT key, ValueT value) {$/;"	f	class:alg::SkipList
+operator []	include/skiplist.h	/^		inline ValueT operator[] (KeyT key) const {$/;"	f	class:alg::SkipList
+print	include/skiplist.h	/^		void print() {$/;"	f	class:alg::SkipList
+rand_norm	include/skiplist.h	/^		inline float rand_norm() { return (float) rand() \/ RAND_MAX; }$/;"	f	class:alg::SkipList
+random_level	include/skiplist.h	/^		int random_level() {$/;"	f	class:alg::SkipList
+value	include/skiplist.h	/^			ValueT	value;			\/\/ value$/;"	m	struct:alg::SkipList::SkipNode
+what	include/skiplist.h	/^			virtual const char * what() const throw() {$/;"	f	class:alg::SkipList::NotFoundException
+~SkipList	include/skiplist.h	/^		~SkipList() {	$/;"	f	class:alg::SkipList
+ALGO_SOL_H__	include/sol.h	20;"	d
+alg	include/sol.h	/^namespace alg {$/;"	n
+list_mao	include/sol.h	/^	static inline void list_mao(struct list_head *entry, struct list_head * head) {$/;"	f	namespace:alg
+list_mtf	include/sol.h	/^	static inline void list_mtf(struct list_head *entry, struct list_head *head) {$/;"	f	namespace:alg
+SortClass	include/sort.h	/^		SortClass(vector<T>& sort_list,bool(*comp)(T,T),void(*_swap)(T&,T&)){$/;"	f	class:alg::SortClass
+SortClass	include/sort.h	/^	class SortClass{$/;"	c	namespace:alg
+_SORT_H_	include/sort.h	2;"	d
+_mergeSort	include/sort.h	/^		void _mergeSort(int len){$/;"	f	class:alg::SortClass
+_quickSort	include/sort.h	/^		void _quickSort(vector<T>& arr,int start,int end){$/;"	f	class:alg::SortClass
+adjHeap	include/sort.h	/^		void adjHeap(int start,int size){$/;"	f	class:alg::SortClass
+alg	include/sort.h	/^namespace alg{$/;"	n
+bubbleSort	include/sort.h	/^		void bubbleSort(){$/;"	f	class:alg::SortClass
+buildHeap	include/sort.h	/^		void buildHeap(){$/;"	f	class:alg::SortClass
+compre	include/sort.h	/^		bool (*compre)(T,T);$/;"	m	class:alg::SortClass
+displaySort	include/sort.h	/^		void displaySort(){$/;"	f	class:alg::SortClass
+heapSort	include/sort.h	/^		void heapSort(){$/;"	f	class:alg::SortClass
+insertSort	include/sort.h	/^		void insertSort(){$/;"	f	class:alg::SortClass
+m_merge_list	include/sort.h	/^		vector<T> m_merge_list;$/;"	m	class:alg::SortClass
+m_sort_list	include/sort.h	/^		vector<T> *m_sort_list;$/;"	m	class:alg::SortClass
+mergeSort	include/sort.h	/^		void mergeSort(){$/;"	f	class:alg::SortClass
+quickSort	include/sort.h	/^		void quickSort(){$/;"	f	class:alg::SortClass
+selectionSort	include/sort.h	/^		void selectionSort(){$/;"	f	class:alg::SortClass
+swap	include/sort.h	/^		void (*swap)(T&,T&);$/;"	m	class:alg::SortClass
+~SortClass	include/sort.h	/^		~SortClass(){$/;"	f	class:alg::SortClass
+ALGO_STACK_H__	include/stack.h	18;"	d
+Stack	include/stack.h	/^				Stack(uint32_t capacity) {$/;"	f	class:alg::Stack
+Stack	include/stack.h	/^		class Stack {$/;"	c	namespace:alg
+StackEmptyException	include/stack.h	/^				class StackEmptyException: public std::exception {$/;"	c	class:alg::Stack
+StackIndexOutOfBoundException	include/stack.h	/^				class StackIndexOutOfBoundException: public std::exception {$/;"	c	class:alg::Stack
+alg	include/stack.h	/^namespace alg {$/;"	n
+count	include/stack.h	/^				inline uint32_t count() const { return m_size; }$/;"	f	class:alg::Stack
+excp_empty	include/stack.h	/^				} excp_empty;$/;"	m	class:alg::Stack	typeref:class:alg::Stack::StackEmptyException
+excp_ioob	include/stack.h	/^				} excp_ioob;$/;"	m	class:alg::Stack	typeref:class:alg::Stack::StackIndexOutOfBoundException
+is_empty	include/stack.h	/^				inline bool is_empty() const { return m_size==0?true:false; } $/;"	f	class:alg::Stack
+m_capacity	include/stack.h	/^				uint32_t m_capacity;		\/\/ the total capacity$/;"	m	class:alg::Stack
+m_elements	include/stack.h	/^				T * m_elements;		\/\/ the elements$/;"	m	class:alg::Stack
+m_size	include/stack.h	/^				uint32_t m_size;			\/\/ current stack size$/;"	m	class:alg::Stack
+operator []	include/stack.h	/^				inline const T& operator[] (uint32_t idx) const {$/;"	f	class:alg::Stack
+pop	include/stack.h	/^				inline void pop() {$/;"	f	class:alg::Stack
+push	include/stack.h	/^				inline bool push(const T & value) {$/;"	f	class:alg::Stack
+top	include/stack.h	/^				inline const T& top() const {$/;"	f	class:alg::Stack
+what	include/stack.h	/^						virtual const char * what() const throw()$/;"	f	class:alg::Stack::StackEmptyException
+what	include/stack.h	/^						virtual const char * what() const throw()$/;"	f	class:alg::Stack::StackIndexOutOfBoundException
+~Stack	include/stack.h	/^				~Stack() {$/;"	f	class:alg::Stack
+ALGO_SUFFIX_ARRAY_H__	include/suffix_array.h	24;"	d
+K	include/suffix_array.h	/^			int N, L, K;$/;"	m	class:alg::SuffixArray
+L	include/suffix_array.h	/^			int N, L, K;$/;"	m	class:alg::SuffixArray
+N	include/suffix_array.h	/^			int N, L, K;$/;"	m	class:alg::SuffixArray
+SuffixArray	include/suffix_array.h	/^			explicit SuffixArray(const string& s) : N(s.size()), L(0), K(0), str(s) { suffix_sort();}$/;"	f	class:alg::SuffixArray
+SuffixArray	include/suffix_array.h	/^	class SuffixArray {$/;"	c	namespace:alg
+alg	include/suffix_array.h	/^namespace alg {$/;"	n
+bucket	include/suffix_array.h	/^			vector<vector<int> > bucket;$/;"	m	class:alg::SuffixArray
+equal	include/suffix_array.h	/^			bool equal(int a, int b) {$/;"	f	class:alg::SuffixArray
+lcp_length	include/suffix_array.h	/^	int SuffixArray::lcp_length(int x, int y) {$/;"	f	class:alg::SuffixArray
+less_than	include/suffix_array.h	/^			bool less_than(int a, int b) { $/;"	f	class:alg::SuffixArray
+operator []	include/suffix_array.h	/^			int operator [] (int i) { return suffix[i];}$/;"	f	class:alg::SuffixArray
+str	include/suffix_array.h	/^			const string& str;$/;"	m	class:alg::SuffixArray
+suffix	include/suffix_array.h	/^			vector<int> suffix;$/;"	m	class:alg::SuffixArray
+suffix_sort	include/suffix_array.h	/^	void SuffixArray::suffix_sort() {$/;"	f	class:alg::SuffixArray
+update_bucket	include/suffix_array.h	/^	void SuffixArray::update_bucket() {$/;"	f	class:alg::SuffixArray
+ActivePoint	include/suffix_tree.h	/^		ActivePoint(Node* node, char edge, int length): $/;"	f	class:SuffixTree::ActivePoint
+ActivePoint	include/suffix_tree.h	/^	class ActivePoint{$/;"	c	class:SuffixTree
+Edge	include/suffix_tree.h	/^		Edge(unsigned int b, unsigned int e, string& str):$/;"	f	struct:SuffixTree::Edge
+Edge	include/suffix_tree.h	/^	struct Edge{$/;"	s	class:SuffixTree
+LinkState	include/suffix_tree.h	/^		LinkState() : first(true), prev(NULL), curr(NULL) {}$/;"	f	class:SuffixTree::LinkState
+LinkState	include/suffix_tree.h	/^	class LinkState$/;"	c	class:SuffixTree
+Node	include/suffix_tree.h	/^		Node(string& str) : $/;"	f	struct:SuffixTree::Node
+Node	include/suffix_tree.h	/^	struct Node{$/;"	s	class:SuffixTree
+SuffixTree	include/suffix_tree.h	/^	SuffixTree(string str):test_str(str), root(test_str), active_point(&root, 0, 0), remainder(0), pos(0), active_e(0), ls() {}$/;"	f	class:SuffixTree
+SuffixTree	include/suffix_tree.h	/^class SuffixTree$/;"	c
+active_e	include/suffix_tree.h	/^	unsigned int active_e;	\/\/ the beginning position of suffixes need to be inserted$/;"	m	class:SuffixTree
+active_edge	include/suffix_tree.h	/^		char active_edge;$/;"	m	class:SuffixTree::ActivePoint
+active_length	include/suffix_tree.h	/^		int active_length;$/;"	m	class:SuffixTree::ActivePoint
+active_node	include/suffix_tree.h	/^		Node* active_node;$/;"	m	class:SuffixTree::ActivePoint
+active_point	include/suffix_tree.h	/^	ActivePoint active_point;$/;"	m	class:SuffixTree
+add_edge	include/suffix_tree.h	/^		void add_edge(Edge* edge) { $/;"	f	struct:SuffixTree::Node
+begin	include/suffix_tree.h	/^		unsigned int begin, end;$/;"	m	struct:SuffixTree::Edge
+change_edge	include/suffix_tree.h	/^		void change_edge(unsigned int b, unsigned int e)$/;"	f	struct:SuffixTree::Edge
+check_active_node	include/suffix_tree.h	/^	bool check_active_node(void)$/;"	f	class:SuffixTree
+clear	include/suffix_tree.h	/^		void clear(void)$/;"	f	class:SuffixTree::LinkState
+curr	include/suffix_tree.h	/^		Node* prev, *curr;$/;"	m	class:SuffixTree::LinkState
+dec_active_len	include/suffix_tree.h	/^	void dec_active_len() { active_point.active_length--; }$/;"	f	class:SuffixTree
+del_edge	include/suffix_tree.h	/^		void del_edge(Edge* edge) {$/;"	f	struct:SuffixTree::Node
+edges	include/suffix_tree.h	/^		map<Edge*, bool> edges;$/;"	m	struct:SuffixTree::Node
+end	include/suffix_tree.h	/^		unsigned int begin, end;$/;"	m	struct:SuffixTree::Edge
+endpoint	include/suffix_tree.h	/^		Node * endpoint;$/;"	m	struct:SuffixTree::Edge
+find_edge	include/suffix_tree.h	/^		Edge* find_edge(char c)$/;"	f	struct:SuffixTree::Node
+findedges	include/suffix_tree.h	/^		map<char, Edge*> findedges;$/;"	m	struct:SuffixTree::Node
+first	include/suffix_tree.h	/^		bool first;$/;"	m	class:SuffixTree::LinkState
+get_active_edge	include/suffix_tree.h	/^	char get_active_edge(void) $/;"	f	class:SuffixTree
+get_active_length	include/suffix_tree.h	/^	int get_active_length(void) { return active_point.active_length; }$/;"	f	class:SuffixTree
+get_active_node	include/suffix_tree.h	/^	Node* get_active_node(void) { return active_point.active_node; }$/;"	f	class:SuffixTree
+get_ele	include/suffix_tree.h	/^	char get_ele(int i) { return test_str[i]; }$/;"	f	class:SuffixTree
+inc_active_len	include/suffix_tree.h	/^	void inc_active_len() { active_point.active_length++; }$/;"	f	class:SuffixTree
+inc_search	include/suffix_tree.h	/^	Iterator inc_search(Iterator sub)$/;"	f	class:SuffixTree
+ins_link	include/suffix_tree.h	/^		void ins_link(Node* node)$/;"	f	class:SuffixTree::LinkState
+is_none	include/suffix_tree.h	/^		bool is_none(void) { return begin == 0 && end == 0; }$/;"	f	struct:SuffixTree::Edge
+isleaf	include/suffix_tree.h	/^		bool isleaf() { return edges.empty(); }$/;"	f	struct:SuffixTree::Node
+length	include/suffix_tree.h	/^		int length(void) $/;"	f	struct:SuffixTree::Edge
+ls	include/suffix_tree.h	/^	LinkState ls;$/;"	m	class:SuffixTree
+operator <	include/suffix_tree.h	/^		friend bool operator<(const Edge& me, const Edge& other)$/;"	f	struct:SuffixTree::Edge
+operator <<	include/suffix_tree.h	/^		friend ostream& operator<<(ostream& os, Edge& edge)$/;"	f	struct:SuffixTree::Edge
+operator <<	include/suffix_tree.h	/^		friend ostream& operator<<(ostream& os, Node& node)$/;"	f	struct:SuffixTree::Node
+operator ==	include/suffix_tree.h	/^		bool operator==(Node& other)$/;"	f	struct:SuffixTree::Node
+operator []	include/suffix_tree.h	/^		char operator[](unsigned int i)$/;"	f	struct:SuffixTree::Edge
+pos	include/suffix_tree.h	/^	unsigned int pos;$/;"	m	class:SuffixTree
+prev	include/suffix_tree.h	/^		Node* prev, *curr;$/;"	m	class:SuffixTree::LinkState
+remainder	include/suffix_tree.h	/^	int remainder;$/;"	m	class:SuffixTree
+root	include/suffix_tree.h	/^	Node root;$/;"	m	class:SuffixTree
+set_active_length	include/suffix_tree.h	/^	void set_active_length(int len) { active_point.active_length = len; }$/;"	f	class:SuffixTree
+set_active_node	include/suffix_tree.h	/^	void set_active_node(Node* node) { active_point.active_node = node; cout << "Active node set as " << node << endl; }$/;"	f	class:SuffixTree
+suffix_link	include/suffix_tree.h	/^		Node* suffix_link;$/;"	m	struct:SuffixTree::Node
+test_node_str	include/suffix_tree.h	/^		string& test_node_str;$/;"	m	struct:SuffixTree::Edge
+test_node_str	include/suffix_tree.h	/^		string& test_node_str;$/;"	m	struct:SuffixTree::Node
+test_str	include/suffix_tree.h	/^	string test_str;$/;"	m	class:SuffixTree
+testmap	include/suffix_tree.h	/^		map<int, int> testmap;$/;"	m	struct:SuffixTree::Node
+ALGO_TRIE_H__	include/trie.h	14;"	d
+Add	include/trie.h	/^			void Add(char * str) {$/;"	f	class:alg::Trie
+Count	include/trie.h	/^			int Count(const char *str) {$/;"	f	class:alg::Trie
+CountPrefix	include/trie.h	/^			int CountPrefix(const char *prefix) {$/;"	f	class:alg::Trie
+NUMWORD	include/trie.h	/^	const int NUMWORD = 26;$/;"	m	namespace:alg
+Trie	include/trie.h	/^			Trie() {$/;"	f	class:alg::Trie
+Trie	include/trie.h	/^	class Trie {$/;"	c	namespace:alg
+_add	include/trie.h	/^			void _add(node *n, const char * str) {$/;"	f	class:alg::Trie
+_count	include/trie.h	/^			int _count(node *n, const char * str) {$/;"	f	class:alg::Trie
+_count_prefix	include/trie.h	/^			int _count_prefix(node *n, char * str) {$/;"	f	class:alg::Trie
+_lowercase	include/trie.h	/^			void _lowercase(char *str) {$/;"	f	class:alg::Trie
+alg	include/trie.h	/^namespace alg {$/;"	n
+edges	include/trie.h	/^					node *edges[NUMWORD];$/;"	m	class:alg::Trie::node
+m_root	include/trie.h	/^			node *m_root;$/;"	m	class:alg::Trie
+node	include/trie.h	/^					node():words(0),prefixes(0) {$/;"	f	class:alg::Trie::node
+node	include/trie.h	/^			class node {$/;"	c	class:alg::Trie
+prefixes	include/trie.h	/^					int prefixes;$/;"	m	class:alg::Trie::node
+words	include/trie.h	/^					int words;$/;"	m	class:alg::Trie::node
+~Trie	include/trie.h	/^			~Trie() {$/;"	f	class:alg::Trie
+~node	include/trie.h	/^					~node() {$/;"	f	class:alg::Trie::node
+ALGO_UNDIRECTED_GRAPH_H__	include/undirected_graph.h	18;"	d
+UndirectedGraph	include/undirected_graph.h	/^	class UndirectedGraph:public Graph {$/;"	c	namespace:alg
+add_edge	include/undirected_graph.h	/^			bool add_edge(uint32_t x, uint32_t y, int32_t weight) {$/;"	f	class:alg::UndirectedGraph
+add_vertex	include/undirected_graph.h	/^			inline bool add_vertex(uint32_t id) {$/;"	f	class:alg::UndirectedGraph
+alg	include/undirected_graph.h	/^namespace alg {$/;"	n
+delete_edge	include/undirected_graph.h	/^			void delete_edge(uint32_t x, uint32_t y) {$/;"	f	class:alg::UndirectedGraph
+delete_me	include/undirected_graph.h	/^			void delete_me(Adjacent * a) {$/;"	f	class:alg::UndirectedGraph
+delete_vertex	include/undirected_graph.h	/^			void delete_vertex(uint32_t id) {$/;"	f	class:alg::UndirectedGraph
+randgraph	include/undirected_graph.h	/^			static UndirectedGraph * randgraph(int nvertex) {$/;"	f	class:alg::UndirectedGraph
+ALGO_UNIVERSAL_HASH_H__	include/universal_hash.h	15;"	d
+UHash	include/universal_hash.h	/^	struct UHash {$/;"	s	namespace:alg
+a	include/universal_hash.h	/^		uint32_t a[KLEN];$/;"	m	struct:alg::UHash
+alg	include/universal_hash.h	/^namespace alg {$/;"	n
+prime	include/universal_hash.h	/^		uint32_t prime;	$/;"	m	struct:alg::UHash
+uhash_bigint	include/universal_hash.h	/^	static uint32_t uhash_bigint(const struct UHash * params, uint32_t * key, uint32_t len) {$/;"	f	namespace:alg
+uhash_init	include/universal_hash.h	/^	static inline void uhash_init(struct UHash * params, uint32_t max_element) {$/;"	f	namespace:alg
+uhash_integer	include/universal_hash.h	/^	static inline uint32_t uhash_integer(const struct UHash * params, uint64_t key) {$/;"	f	namespace:alg
+ADJ	include/word_seg.h	/^				ADJ	,		\/\/		形容词$/;"	e	enum:alg::WordSeg::WORDTAG
+ADV	include/word_seg.h	/^				ADV	,		\/\/		副词$/;"	e	enum:alg::WordSeg::WORDTAG
+ALGO_WORD_SEG_H__	include/word_seg.h	21;"	d
+AUX	include/word_seg.h	/^				AUX	,		\/\/		助词$/;"	e	enum:alg::WordSeg::WORDTAG
+BEGIN	include/word_seg.h	/^				BEGIN = 1,$/;"	e	enum:alg::WordSeg::WORDSTATE
+CLAS	include/word_seg.h	/^				CLAS,		\/\/		量词$/;"	e	enum:alg::WordSeg::WORDTAG
+CONJ	include/word_seg.h	/^				CONJ,		\/\/		连词$/;"	e	enum:alg::WordSeg::WORDTAG
+COOR	include/word_seg.h	/^				COOR,		\/\/		并列连词$/;"	e	enum:alg::WordSeg::WORDTAG
+ECHO	include/word_seg.h	/^				ECHO,		\/\/		拟声词$/;"	e	enum:alg::WordSeg::WORDTAG
+END	include/word_seg.h	/^				END = 3$/;"	e	enum:alg::WordSeg::WORDSTATE
+EP	include/word_seg.h	/^				float 		EP[4];	\/\/ the emission probability in each state$/;"	m	struct:alg::WordSeg::WordEP
+GB18030_NR	include/word_seg.h	/^			static const int GB18030_NR	= 70244;$/;"	m	class:alg::WordSeg
+IDIOM	include/word_seg.h	/^				IDIOM 		\/\/  	成语	$/;"	e	enum:alg::WordSeg::WORDTAG
+MIDDLE	include/word_seg.h	/^				MIDDLE = 2,$/;"	e	enum:alg::WordSeg::WORDSTATE
+N	include/word_seg.h	/^				N=0,		\/\/		名词$/;"	e	enum:alg::WordSeg::WORDTAG
+NUM	include/word_seg.h	/^				NUM	  ,		\/\/  	数词$/;"	e	enum:alg::WordSeg::WORDTAG
+PREFIX	include/word_seg.h	/^				PREFIX,		\/\/		后缀$/;"	e	enum:alg::WordSeg::WORDTAG
+PREP	include/word_seg.h	/^				PREP  ,		\/\/  	介词$/;"	e	enum:alg::WordSeg::WORDTAG
+PRON	include/word_seg.h	/^				PRON  ,		\/\/  	代词$/;"	e	enum:alg::WordSeg::WORDTAG
+QUES	include/word_seg.h	/^				QUES  ,		\/\/  	疑问词$/;"	e	enum:alg::WordSeg::WORDTAG
+SC	include/word_seg.h	/^				uint64_t	SC[4];	\/\/ the count of appearence in each state$/;"	m	struct:alg::WordSeg::WordEP
+SINGLE	include/word_seg.h	/^				SINGLE = 0,$/;"	e	enum:alg::WordSeg::WORDSTATE
+SP	include/word_seg.h	/^			inline const float (&SP()const)[4] {$/;"	f	class:alg::WordSeg
+STRU	include/word_seg.h	/^				STRU,		\/\/		结构助词$/;"	e	enum:alg::WordSeg::WORDTAG
+SUFFIX	include/word_seg.h	/^				SUFFIX,		\/\/		前缀$/;"	e	enum:alg::WordSeg::WORDTAG
+TP	include/word_seg.h	/^			inline const float (&TP()const)[4][4] {$/;"	f	class:alg::WordSeg
+V	include/word_seg.h	/^				V,			\/\/		动词$/;"	e	enum:alg::WordSeg::WORDTAG
+WORDSTATE	include/word_seg.h	/^			enum WORDSTATE {$/;"	g	class:alg::WordSeg
+WORDTAG	include/word_seg.h	/^			enum WORDTAG {$/;"	g	class:alg::WordSeg
+WordEP	include/word_seg.h	/^				WordEP() {$/;"	f	struct:alg::WordSeg::WordEP
+WordEP	include/word_seg.h	/^			struct WordEP {$/;"	s	class:alg::WordSeg
+WordSeg	include/word_seg.h	/^			WordSeg() : wordht(GB18030_NR){ }$/;"	f	class:alg::WordSeg
+WordSeg	include/word_seg.h	/^			WordSeg(const char * path):wordht(GB18030_NR) {$/;"	f	class:alg::WordSeg
+WordSeg	include/word_seg.h	/^	class WordSeg {$/;"	c	namespace:alg
+add_word	include/word_seg.h	/^			void add_word(const char * word) {$/;"	f	class:alg::WordSeg
+alg	include/word_seg.h	/^namespace alg {$/;"	n
+calc_all	include/word_seg.h	/^			void calc_all() {$/;"	f	class:alg::WordSeg
+calc_ep	include/word_seg.h	/^			void calc_ep(WordEP & wep) {$/;"	f	class:alg::WordSeg
+run	include/word_seg.h	/^			Queue<uint32_t> * run(const char * str) {$/;"	f	class:alg::WordSeg
+wordht	include/word_seg.h	/^			HashTable<uint32_t, WordEP> wordht;	\/\/ a WORD-> WordEP hashtable$/;"	m	class:alg::WordSeg
+ALGO_ALGVS_H__	msvc/alg_vs.h	2;"	d
+ALG_VLA_NOT_SUPPORTED	msvc/alg_vs.h	12;"	d
+_CRT_SECURE_NO_WARNINGS	msvc/alg_vs.h	5;"	d
+__func__	msvc/alg_vs.h	7;"	d
+strtok_r	msvc/alg_vs.h	9;"	d
+typeof	msvc/alg_vs.h	15;"	d
+main	src/8queue_demo.cpp	/^int main(void) {$/;"	f
+main	src/LRU_cache_demo.cpp	/^int main() {$/;"	f
+MARK	src/astar_demo.cpp	8;"	d	file:
+N	src/astar_demo.cpp	6;"	d	file:
+main	src/astar_demo.cpp	/^int main(void)$/;"	f
+N	src/avl_demo.cpp	/^const unsigned N = 4096*32;$/;"	v
+N_ELEMS_TO_REMOVE	src/avl_demo.cpp	/^const unsigned N_ELEMS_TO_REMOVE = N-128; \/\/ Must be between 0 and N-1$/;"	v
+main	src/avl_demo.cpp	/^int main()$/;"	f
+printTreeStatus	src/avl_demo.cpp	/^void printTreeStatus(const AVL<T> &t) {$/;"	f
+main	src/base64_demo.cpp	/^int main() {$/;"	f
+main	src/bellman_ford_demo.cpp	/^int main(void)$/;"	f
+main	src/binary_search_tree_demo.cpp	/^int main()$/;"	f
+main	src/bitset_demo.cpp	/^int main(void)$/;"	f
+main	src/bloom_filter_demo.cpp	/^int main(void)$/;"	f
+main	src/btree_demo.cpp	/^int main(void) {$/;"	f
+main	src/bubble_sort_demo.cpp	/^int main (int argc, char const *argv[]) {$/;"	f
+main	src/dictionary_demo.cpp	/^int main(void) {$/;"	f
+main	src/dijkstra_demo.cpp	/^int main(void)$/;"	f
+main	src/directed_graph_demo.cpp	/^int main()$/;"	f
+main	src/disjoint-set_demo.cpp	/^int main(void) {$/;"	f
+main	src/dos_tree_demo.cpp	/^int main(void)$/;"	f
+DemoNode	src/double_linked_list_demo.cpp	/^struct DemoNode{$/;"	s	file:
+key	src/double_linked_list_demo.cpp	/^	int key;$/;"	m	struct:DemoNode	file:
+list	src/double_linked_list_demo.cpp	/^	struct list_head list;$/;"	m	struct:DemoNode	typeref:struct:DemoNode::list_head	file:
+main	src/double_linked_list_demo.cpp	/^int main()$/;"	f
+main	src/edmonds_karp_demo.cpp	/^int main(void)$/;"	f
+main	src/fenwick_tree_demo.cpp	/^int main()$/;"	f
+main	src/fib-heap_demo.cpp	/^int main(void) {$/;"	f
+main	src/graph_demo.cpp	/^int main()$/;"	f
+undirected_graph_rand	src/graph_demo.cpp	/^struct Graph * undirected_graph_rand(int nvertex) $/;"	f
+main	src/graph_search_demo.cpp	/^int main()$/;"	f
+main	src/hash_multi_demo.cpp	/^int main()$/;"	f
+main	src/hash_string_demo.cpp	/^int main(void)$/;"	f
+main	src/hash_table_demo.cpp	/^int main()$/;"	f
+main	src/heap_demo.cpp	/^int main()$/;"	f
+STR	src/huffman_demo.cpp	5;"	d	file:
+main	src/huffman_demo.cpp	/^int main(void)$/;"	f
+main	src/imath_demo.cpp	/^int main() {$/;"	f
+main	src/insertion_sort_demo.cpp	/^int main()$/;"	f
+main	src/integer_demo.cpp	/^int main(void)$/;"	f
+main	src/interval_tree_demo.cpp	/^int main() {$/;"	f
+main	src/k-means_demo.cpp	/^int main()$/;"	f
+main	src/kmp_demo.cpp	/^int main(void)$/;"	f
+main	src/kruskal_mst_demo.cpp	/^int main(void)$/;"	f
+main	src/lcs_demo.cpp	/^int main(void)$/;"	f
+printlistC	src/lcs_demo.cpp	7;"	d	file:
+main	src/m_based_demo.cpp	/^int main()$/;"	f
+main	src/max_subarray_demo.cpp	/^int main() {$/;"	f
+MDFile	src/md5_demo.cpp	/^static void MDFile (const char *filename)$/;"	f	file:
+MDFilter	src/md5_demo.cpp	/^static void MDFilter ()$/;"	f	file:
+MDPrint	src/md5_demo.cpp	/^static void MDPrint (MD5_CTX *mdContext)$/;"	f	file:
+MDString	src/md5_demo.cpp	/^static void MDString(const char *inString)$/;"	f	file:
+MDTestSuite	src/md5_demo.cpp	/^static void MDTestSuite ()$/;"	f	file:
+MDTimeTrial	src/md5_demo.cpp	/^static void MDTimeTrial ()$/;"	f	file:
+TEST_BLOCKS	src/md5_demo.cpp	24;"	d	file:
+TEST_BLOCK_SIZE	src/md5_demo.cpp	21;"	d	file:
+TEST_BYTES	src/md5_demo.cpp	/^static long TEST_BYTES = (long)TEST_BLOCK_SIZE * (long)TEST_BLOCKS;$/;"	v	file:
+main	src/md5_demo.cpp	/^int main (int argc, char *argv[])$/;"	f
+main	src/merge_sort_demo.cpp	/^int main()$/;"	f
+main	src/palindrome_demo.cpp	/^int main() {$/;"	f
+main	src/perfect_hash_demo.cpp	/^int main(void)$/;"	f
+main	src/prim_mst_demo.cpp	/^int main(void)$/;"	f
+MAX_FACTORS	src/prime_decompose.c	12;"	d	file:
+MAX_PRIME	src/prime_decompose.c	16;"	d	file:
+MAX_PRIME_SQ	src/prime_decompose.c	17;"	d	file:
+PBITS	src/prime_decompose.c	18;"	d	file:
+PRIuPINT	src/prime_decompose.c	10;"	d	file:
+PRIuXINT	src/prime_decompose.c	11;"	d	file:
+bit_pos	src/prime_decompose.c	/^uint8_t bit_pos[30] = {$/;"	v
+decompose	src/prime_decompose.c	/^int decompose(xint n, xint *f)$/;"	f
+init_primes	src/prime_decompose.c	/^void init_primes()$/;"	f
+is_prime	src/prime_decompose.c	/^int is_prime(xint x)$/;"	f
+main	src/prime_decompose.c	/^int main()$/;"	f
+next_prime	src/prime_decompose.c	/^pint next_prime(pint p)$/;"	f
+pbits	src/prime_decompose.c	/^uint8_t *pbits;$/;"	v
+pint	src/prime_decompose.c	/^typedef uint32_t pint;$/;"	t	file:
+rem_num	src/prime_decompose.c	/^uint8_t rem_num[] = { 1, 7, 11, 13, 17, 19, 23, 29 };$/;"	v
+sieve	src/prime_decompose.c	/^void sieve(pint p)$/;"	f
+uint	src/prime_decompose.c	/^typedef unsigned int uint;$/;"	t	file:
+xint	src/prime_decompose.c	/^typedef uint64_t xint;$/;"	t	file:
+main	src/prime_demo.cpp	/^int main()$/;"	f
+main	src/priority_queue_demo.cpp	/^int main(void)$/;"	f
+main	src/queue_demo.cpp	/^int main()$/;"	f
+main	src/quick_sort_demo.cpp	/^int main()$/;"	f
+main	src/radix_sort_demo.cpp	/^int main()$/;"	f
+main	src/random_demo.cpp	/^int main(void) {$/;"	f
+main	src/random_select_demo.cpp	/^int main()$/;"	f
+INDENT_STEP	src/rbtree_demo.cpp	37;"	d	file:
+main	src/rbtree_demo.cpp	/^int main() {$/;"	f
+main	src/relabel_to_front_demo.cpp	/^int main(void)$/;"	f
+main	src/scc_demo.cpp	/^int main()$/;"	f
+main	src/selection_sort_demo.cpp	/^int main (int argc, char const *argv[]) {$/;"	f
+printlist	src/selection_sort_demo.cpp	/^static void printlist(T & list,int count) {$/;"	f	file:
+TESTA	src/sha1_demo.cpp	6;"	d	file:
+main	src/sha1_demo.cpp	/^int main(void)$/;"	f
+main	src/shell_sort_demo.cpp	/^int main()$/;"	f
+main	src/shuffle_demo.cpp	/^int main()$/;"	f
+addsentence	src/simhash_demo.cpp	/^void addsentence(char * str, SimHash &h) {$/;"	f
+main	src/simhash_demo.cpp	/^int main(void) {$/;"	f
+main	src/skiplist_demo.cpp	/^int main()$/;"	f
+comp	src/sort_demo.cpp	/^bool comp(int a,int b){$/;"	f
+main	src/sort_demo.cpp	/^int main (int argc, char const *argv[])$/;"	f
+makeArray	src/sort_demo.cpp	/^void makeArray(vector<int>& array,int num){$/;"	f
+swap	src/sort_demo.cpp	/^void swap(int &a,int &b){$/;"	f
+main	src/stack_demo.cpp	/^int main()$/;"	f
+main	src/suffix_array_demo.cpp	/^int main()$/;"	f
+print	src/suffix_array_demo.cpp	/^void print(string::iterator b, string::iterator e) {$/;"	f
+construct	src/suffix_tree_demo.cpp	/^int SuffixTree::construct(void)$/;"	f	class:SuffixTree
+main	src/suffix_tree_demo.cpp	/^int main()$/;"	f
+print_node	src/suffix_tree_demo.cpp	/^int SuffixTree::print_node(Node* node, int level)$/;"	f	class:SuffixTree
+print_tree	src/suffix_tree_demo.cpp	/^int SuffixTree::print_tree()$/;"	f	class:SuffixTree
+search	src/suffix_tree_demo.cpp	/^int SuffixTree::search(string sub)$/;"	f	class:SuffixTree
+separate_edge	src/suffix_tree_demo.cpp	/^SuffixTree::Node* SuffixTree::separate_edge(Node * node, Edge* a_edge)$/;"	f	class:SuffixTree
+main	src/trie_demo.cpp	/^int main(void) {$/;"	f
+main	src/undirected_graph_demo.cpp	/^int main()$/;"	f
+main	src/universal_hash_demo.cpp	/^int main(void)$/;"	f
+main	src/word_seg_demo.cpp	/^int main(void)$/;"	f
+ALGO_BYTEORDER_H__	utils/byteorder.h	2;"	d
+BYTE_MASK_ABCD____	utils/byteorder.h	79;"	d
+BYTE_MASK_AB__	utils/byteorder.h	48;"	d
+BYTE_MASK_AB__EF__	utils/byteorder.h	77;"	d
+BYTE_MASK_A_	utils/byteorder.h	25;"	d
+BYTE_MASK_A_C_	utils/byteorder.h	46;"	d
+BYTE_MASK_A_C_E_G_	utils/byteorder.h	75;"	d
+BYTE_MASK__B	utils/byteorder.h	26;"	d
+BYTE_MASK__B_D	utils/byteorder.h	47;"	d
+BYTE_MASK__B_D_F_H	utils/byteorder.h	76;"	d
+BYTE_MASK___CD	utils/byteorder.h	49;"	d
+BYTE_MASK___CD__GH	utils/byteorder.h	78;"	d
+BYTE_MASK_____EFGH	utils/byteorder.h	80;"	d
+byte_swap2	utils/byteorder.h	/^byte_swap2(uint16_t original)$/;"	f
+byte_swap4	utils/byteorder.h	/^byte_swap4(uint32_t original)$/;"	f
+byte_swap8	utils/byteorder.h	/^byte_swap8( uint64_t original )$/;"	f
+is_big_endian	utils/byteorder.h	/^is_big_endian()$/;"	f
+ALGO_GB18030_H__	utils/gb18030.h	2;"	d
+gb18030_putchar	utils/gb18030.h	/^gb18030_putchar(const uint32_t w)$/;"	f
+gb18030_read	utils/gb18030.h	/^gb18030_read(const char * str, int start, uint32_t * WORD)$/;"	f
